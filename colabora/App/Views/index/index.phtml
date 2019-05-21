@@ -2,59 +2,123 @@
 <html>
 
 <head>
-    <title>Home Page</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
-
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/css_slider.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/responsive-nav.js"></script>
 </head>
 
 <body>
-    <div class="main-top w3-opacity-max">
-        <!-- Navbar (sit on top) -->
-        <div class="w3-top">
-            <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-                <a href="index.html" class="w3-bar-item w3-button"><b>C</b>olabora</a>
-                <!-- Float links to the right. Hide them on small screens -->
-                <div class="w3-right w3-hide-small">
-                    <a href="#projects" class="w3-bar-item w3-button">Como funciona</a>
-                    <a href="#projects" class="w3-bar-item w3-button">Projetos</a>
-                    <a href="login.html" class="w3-bar-item w3-button">Entrar</a>
-                    <a href="cadastro.html" class="w3-bar-item w3-button">Cadastre-se</a>
-                </div>
+  <header>
+    <a href="#home" class="logo" data-scroll><b>C</b>olabora</a>
+    <nav class="nav-collapse">
+      <ul>
+        <li class="menu-item"><a href="#home" data-scroll>Como Funciona</a></li>
+        <li class="menu-item"><a href="#about" data-scroll>Projetos</a></li>
+        <li class="menu-item"><a href="login.html" data-scroll>Entrar</a></li>
+        <li class="menu-item"><a href="cadastro.html" data-scroll>Registre-se</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- banner -->
+  <div class="banner_w3lspvt">
+    <div class="csslider infinity" id="slider1">
+      <input type="radio" name="slides" checked="checked" id="slides_1" />
+      <input type="radio" name="slides" id="slides_2" />
+      <input type="radio" name="slides" id="slides_3" />
+      <ul class="banner_slide_bg">
+        <li>
+          <div class="container-fluid">
+            <div class="w3ls_banner_txt">
+              <h3><span>Seja um</span>Voluntário</h3>
+              <p class="w3ls_pvt-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum
+                turpis.</p>
+              <p class="w3ls_pvt-title mt-2">Morbi posuere elementum orci, id molestie ligula tristique infres.</p>
+              <a href="about.html" class="btn button-style mt-sm-5 mt-4">Read More</a>
             </div>
-        </div>
-
-        <!-- banner -->
-        <div class="main-banner">
-            <div class="container">
-                <div class="style-banner ">
-                    <h4 class="mb-2">Seja</h4>
-                    <h4 class="mb-2">Um</h4>
-                    <h4 class="">Voluntário</h4>
-
-                </div>
+          </div>
+        </li>
+        <li>
+          <div class="container-fluid">
+            <div class="w3ls_banner_txt">
+              <h3><span>Mudança</span>Social</h3>
+              <p class="w3ls_pvt-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum
+                turpis.</p>
+              <p class="w3ls_pvt-title mt-2">Morbi posuere elementum orci, id molestie ligula tristique infres.</p>
+              <a href="about.html" class="btn button-style mt-sm-5 mt-4">Read More</a>
             </div>
+          </div>
+        </li>
+        <li>
+          <div class="container-fluid">
+            <div class="w3ls_banner_txt">
+              <h3><span>Mude o Mundo</span>de Alguém</h3>
+              <p class="w3ls_pvt-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum
+                turpis.</p>
+              <p class="w3ls_pvt-title mt-2">Morbi posuere elementum orci, id molestie ligula tristique infres.</p>
+              <a href="about.html" class="btn button-style mt-sm-5 mt-4">Read More</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="navigation">
+        <div>
+          <label for="slides_1"></label>
+          <label for="slides_2"></label>
+          <label for="slides_3"></label>
         </div>
+      </div>
     </div>
-    <!-- //banner -->   
+  </div>
+  <!-- //banner -->
+  </div>
+  <!-- //main banner -->
 
-    <div>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-    </div>
+  <section class="conteudo" id="home">
+    <h1>Como Funciona</h1>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
 
 
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery-3.1.0.js"></script>
+  </section>
 
+  <section class="conteudo" id="about">
+    <h1>Projetos</h1>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </section>
+
+
+
+
+
+  <script src="js/fastclick.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/fixed-responsive-nav.js"></script>
+  <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
