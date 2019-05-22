@@ -26,6 +26,21 @@ class IndexController extends Action{
 
 	}
 
+	public function registrar() {
+
+		$usuario = Container::getModel('Usuario');
+
+		//('atributo', $_POST('valor recebido via POST'));
+		$usuario->__set('nome', $_POST['nome']);
+		$usuario->__set('email', $_POST['email']);
+		$usuario->__set('senha', $_POST['senha']);
+		$usuario->__set('dt_nasc', $_POST['user']);
+		// $usuario->__set('genero', $_POST['user_gender']);
+		$usuario->__set('estado_id', $_POST['user_nationality']);
+
+		$usuario->salvar();
+
+	}
 }	
 
 ?>
