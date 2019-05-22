@@ -38,7 +38,17 @@ class IndexController extends Action{
 		$usuario->__set('genero', $_POST['user_gender']);
 		$usuario->__set('estado', $_POST['user_nationality']);
 
-		$usuario->salvar();
+		if ($usuario->validarCadastro() && count($usuario->getUsuarioPoremail()) == 0) {
+
+			$usuario->salvar();
+				
+			echo "Cadastro realizado com sucesso!";
+
+		}else{
+
+			echo "Deu ruim...";
+
+		}
 
 	}
 }	
