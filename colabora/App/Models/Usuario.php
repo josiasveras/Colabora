@@ -9,7 +9,7 @@ class Usuario extends Model {
 	private $nome;
 	private $email;
 	private $senha;
-	// private $dt_nasc;
+	private $dt_nasc;
 	private $genero;
 	private $estado_id;
 
@@ -23,22 +23,25 @@ class Usuario extends Model {
 
 	//Salvar
 	public function salvar() {
-		$query = "insert into usuario_cadastro_basico(nome, email, senha, genero, estado_id)values(:nome, :email, :senha, :genero, :estado_id)";
+		$query = "insert into usuario_cadastro_basico(nome, email, senha, dt_nasc, genero, estado)values(:nome, :email, :senha, :dt_nasc, :genero, :estado)";
+
 		$stmt = $this->db->prepare($query);
 		$stmt->bindValue(':nome', $this->__get('nome'));
 		$stmt->bindValue(':email', $this->__get('email'));
 		$stmt->bindValue(':senha', $this->__get('senha'));//md5() -> hash 32 caracteres
-		// $stmt->bindValue(':dt_nasc', $this->__get('dt_nasc'));
+		$stmt->bindValue(':dt_nasc', $this->__get('dt_nasc'));
 		$stmt->bindValue(':genero', $this->__get('genero'));
-		$stmt->bindValue(':estado_id', $this->__get('estado_id'));
+		$stmt->bindValue(':estado', $this->__get('estado'));
 		$stmt->execute();
 
 		return $this;
+
+
 	}
 
 	//Validar cadastro
 
-	//Recuperar usuario por email (evitat duplicidade de cadastro)
+	//Recuperar usuario por email (evitar duplicidade de cadastro)
 }
 
 

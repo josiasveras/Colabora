@@ -34,9 +34,9 @@ class IndexController extends Action{
 		$usuario->__set('nome', $_POST['nome']);
 		$usuario->__set('email', $_POST['email']);
 		$usuario->__set('senha', $_POST['senha']);
-		$usuario->__set('dt_nasc', $_POST['user']);
-		// $usuario->__set('genero', $_POST['user_gender']);
-		$usuario->__set('estado_id', $_POST['user_nationality']);
+		$usuario->__set('dt_nasc', $_POST['bday']);
+		$usuario->__set('genero', $_POST['user_gender']);
+		$usuario->__set('estado', $_POST['user_nationality']);
 
 		$usuario->salvar();
 
