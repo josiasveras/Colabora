@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App;
 
@@ -13,9 +13,9 @@ class Route extends Bootstrap {
 		$routes['home'] = array(
 			//"Home" que é o path raiz '/'
 			'route' => '/',
-			//Que aciona o "indexController" 
+			//Que aciona o "indexController"
 			'controller' => 'indexController',
-			//Que dispara a action "index" 
+			//Que dispara a action "index"
 			'action' => 'index'
 		);
 
@@ -31,10 +31,14 @@ class Route extends Bootstrap {
 			'action' => 'login'
 		);
 
+		$routes['projeto'] = array(
+			'route' => '/projeto',
+			'controller' => 'indexController',
+			'action' => 'projeto'
+		);
 		$this->setRoutes($routes);
 
 	}
-
 }
 
 ?>
