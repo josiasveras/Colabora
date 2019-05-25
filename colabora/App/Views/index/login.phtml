@@ -1,70 +1,56 @@
-    <!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel='stylesheet' type='text/css' media="all">
+    
+</head>
 
-    <head>
-        <title>Login</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
-        <link href="css/responsive.css" rel='stylesheet' type='text/css' media="all">
-        <link href="css/responsive.css" rel="stylesheet" type="text/css"> -->
+<body>
 
-    </head>
-
-    <body class="secundaria">      
-            <div class="w3-top">
-                <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-                    <a href="index.html" class="w3-bar-item w3-button"><b>C</b>olabora</a>
-                    <!-- Float links to the right. Hide them on small screens -->
-                    <div class="w3-right w3-hide-small">
-                        <a href="#projects" class="w3-bar-item w3-button">Como funciona</a>
-                        <a href="#projects" class="w3-bar-item w3-button">Projetos</a>
-                        <a href="login.html" class="w3-bar-item w3-button">Entrar</a>
-                        <a href="cadastro.html" class="w3-bar-item w3-button">Cadastre-se</a>
+    <header>
+        <a href="index.html" class="logo"><b>C</b>olabora</a>
+        <nav class="nav-collapse">
+            <ul>
+                <li class="menu-item"><a href="#home" data-scroll>Como Funciona</a></li>
+                <li class="menu-item"><a href="#about" data-scroll>Projetos</a></li>
+                <li class="menu-item"><a href="login.html" data-scroll>Entrar</a></li>
+                <li class="menu-item"><a href="cadastro.html" data-scroll>Registre-se</a></li>
+    
+            </ul>
+        </nav>
+    </header>
+    <section class="registration">
+        <div class="container-fluid">
+            <div class="box registration_box">
+                <h1 class="h2 text_center">Entrar</h1>
+                <form class="new_user" id="new_user" action="#" method="POST">
+                    <div class="form_group">
+                        <input autofocus="autofocus" type="email" value="" class="form_input email_input" id="user_email" placeholder="E-mail" name="email" required>
                     </div>
-                </div>
-            </div>
-
-        <section class="registrar">
-            <div class="container-fluid">
-                <section class="row">
-                    <div class="col-md-4 col-lg-4 col-sm-6 col-md-offset-4 col-lg-offset-4 col-sm-offset-3">
-                    <div class="box registration_box">
-                        <h2 class="h2 text_center">Entrar</h2>
-                        <form action="index.html" class="needs-validation" novalidate>
-                            <div class="form-group">
-                                <input autofocus="autofocus" type="email" class="form-control email_control" id="user_email"
-                                    placeholder="E-mail" name="email" required>
-                                <div class="invalid-feedback">Por favor entre com e-mail válido.</div>
-                            </div>
-                            <div class="form-group">
-                                <input autocomplete="off" type="password" class="form-control" id="pwd"
-                                    placeholder="Sua senha" name="senha" required>
-                                <div class="invalid-feedback">Entre com a senha</div>
-                            </div>
-                            <div>
-                            <a class="small" href="#">Esqueceu a senha?</a>
-                            </div>
-                            <button type="submit" value="Entrar" class="btn btn-lg btn-primary btn-block">Entrar</button>
-                        </form>
+                    <div class="form_group">
+                        <input autocomplete="off" type="password" class="form_input password_input" value="" id="pwd" placeholder="Sua senha" name="senha" required>
                     </div>
-                    <h2 class="h4 with_link text-center">
-                        Não é membro ainda?
-                        <br>
-                        <a href="cadastro.html">Cadastre-se</a>
-                    </h2>
-                </section>
-            </div>
-        </section>
+                    <div class="forgot_password_holder pb-4 pt-4">
+                         <a class="small" href="#">Deu branco na senha?</a>
+                    </div>     
+                    <input type="submit" value="Entrar" class="btn btn_lg btn_primary btn_block" />
+             </div>
+                </form>
+        </div>
+        <h2 class="h4 pt-5 with_link text-center">
+            Não é membro ainda?
+            <br>
+            <a href="cadastro.html">Cadastre-se</a>
+        </h2>
+    </section>
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
 
-
-            <script src="js/bootstrap.js"></script>
-            <script src="js/jquery-3.1.0.js"></script>
-
-
-
-    </body>
-
-    </html>
+</html>
