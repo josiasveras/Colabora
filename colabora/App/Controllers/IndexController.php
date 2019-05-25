@@ -16,6 +16,16 @@ class IndexController extends Action{
 
 	public function cadastro() {
 
+		$this->view->usuario = array (
+				'nome' => '',
+				'email' => '',
+				'senha' => '',
+				'dt_nasc' => '',
+				//'genero' => '',
+				//'estado' => '',
+			); 
+
+		$this->view->erroCadastro = false;
 		$this->render('cadastro');
 
 	}
@@ -26,6 +36,44 @@ class IndexController extends Action{
 
 	}
 
+	public function registrar() {
+
+		$usuario = Container::getModel('Usuario');
+
+		//('atributo', $_POST('valor recebido via POST'));
+		$usuario->__set('nome', $_POST['nome']);
+		$usuario->__set('email', $_POST['email']);
+		$usuario->__set('senha', $_POST['senha']);
+		$usuario->__set('dt_nasc', $_POST['bday']);
+		$usuario->__set('genero', $_POST['user_gender']);
+		$usuario->__set('estado', $_POST['user_nationality']);
+
+		if ($usuario->validarCadastro() && count($usuario->getUsuarioPoremail()) == 0) {
+
+			$usuario->salvar();
+			
+			$this->render('login');
+			echo "Cadastro realizado com sucesso!";
+
+		}else{
+
+			//Recuperando os dados preenchidos pelo usuário
+			$this->view->usuario = array (
+				'nome' => $_POST['nome'],
+				'email' => $_POST['email'],
+				'senha' => $_POST['senha'],
+				'dt_nasc' => $_POST['bday'],
+				//'genero' => $_POST['user_gender'],
+				//'estado' => $_POST['user_nationality'],
+			); 
+
+			$this->view->erroCadastro = true;
+			
+			$this->render('cadastro');
+
+		}
+
+	}
 }	
 
 ?>
