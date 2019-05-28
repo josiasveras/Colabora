@@ -8,30 +8,77 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel='stylesheet' type='text/css' media="all">
     <script src="js/responsive-nav.js"></script>
-
-
-
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.1.4.min.js"></script>
 </head>
 
 <body>
+ <!--header start here-->
+                <div class="header-main">
+                <a href="index.html" class="logo" data-scroll><b>C</b>olabora</a>             
+                    
+                    <div class="w3layouts-right">
+                        <div class="profile_details_left">
+                            <!--notifications of menu start -->
+                            <ul class="nofitications-dropdown">
+                                <li class="dropdown head-dpdn">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i
+                                            class="fa fa-envelope"></i><span class="badge">3</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="notification_header">
+                                                <h3>You have 3 new messages</h3>
+                                            </div></li>                                       
+                                        <li><a href="#">                                                
+                                                <div class="notification_desc">
+                                                    <p>Lorem ipsum dolor</p>
+                                                    <p><span>1 hour ago</span></p>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </a></li>
+                                        <li>
+                                            <div class="notification_bottom">
+                                                <a href="#">See all messages</a>
+                                            </div></li>
+                                    </ul>
+                                </li>                           
+                                
+                            </ul>                           
+                        </div>             
+                        
+                    </div>
 
-<header class="header-main">
-    <a href="index.html" class="logo"><b>C</b>olabora</a>
-    <nav class="nav-collapse">
-        <ul>
-            <li class="menu-item"><a href="#home" data-scroll>Como Funciona</a></li>
-            <li class="menu-item"><a href="#about" data-scroll>Projetos</a></li>
-            <li class="menu-item"><a href="login.html" data-scroll>Entrar</a></li>
-            <li class="menu-item"><a href="cadastro.html" data-scroll>Registre-se</a></li>
-
-        </ul>
-    </nav>
-</header>
+                    <div class="profile_details w3l">
+                        <ul>
+                            <li class="dropdown profile_details_drop">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <div class="profile_img">
+                                        <span class="prfil-img"><img src="icons/in4.jpg" alt=""> </span>
+                                        <div class="user-name">
+                                            <p>Malorum</p>
+                                            <span>Administrator</span>
+                                        </div>
+                                        <i class="fa fa-angle-down"></i>
+                                        <i class="fa fa-angle-up"></i>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu drp-mnu">
+                                    <li> <a href="cadastro_editar.html"><i class="fa fa-cog"></i>Conta</a> </li>
+                                    <li> <a href="#"><i class="fa fa-user"></i>Perfil</a> </li>
+                                    <li> <a href="#"><i class="fa fa-sign-out"></i>Sair</a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="clearfix"> </div>
+                </div>
 
     <section class="registration">
         <div class="container-fluid">
             <div class="box registration_box">
-                <h1 class="h2 text_center">Registre-se</h1>
+                <h1 class="border_bottom h2 text_center">Informações Pessoais</h1>
                 <form class="register_form inactive" id="new_user" action="#" method="POST">
                     <div class="form_group">
                         <input autofocus="autofocus" placeholder="Nome Completo" type="text"
@@ -222,30 +269,18 @@
                             <option value="1940">1940</option>
                         </select>
                     </div>
-                    <div class="form_group">
-                        <input class="form_input" data-form-check-box="" type="checkbox" value="" name="user_terms"
-                            id="user_terms">
-                        <label class="small" for="user_terms"> Eu aceito os <a href="#"> termos de uso </a> e <a
-                                href="politica_privacidade.html"> privacidade </a> da
-                            Colabora</label>
-                    </div>
-                    <input type="submit" name="comit" value="Registrar-se" class="btn btn_lg btn_primary btn_block">
+                    
+                    <input type="submit" name="comit" value="Salvar" class="btn btn_lg btn_primary btn_block">
                 </form>
             </div>
-            <h2 class="pt-4 h4 with_link text_center">
-                Já é um membro?
-                <br>
-                <a href="login.html">Entrar</a>
-            </h2>
-        </div>
+           
     </section>
 
 
-    <script src="js/bootstrap.js"></script>
     <script src="js/fastclick.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/fixed-responsive-nav.js"></script>
-
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 

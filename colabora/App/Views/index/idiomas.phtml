@@ -8,36 +8,196 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel='stylesheet' type='text/css' media="all">
     <script src="js/responsive-nav.js"></script>
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.1.4.min.js"></script>
 
 
 </head>
 
 <body>
 
-    <header>
-        <a href="index.html" class="logo"><b>C</b>olabora</a>
-        <nav class="nav-collapse">
-            <ul>
-                <li class="menu-item"><a href="#home" data-scroll>Como Funciona</a></li>
-                <li class="menu-item"><a href="#about" data-scroll>Projetos</a></li>
-                <li class="menu-item"><a href="login.html" data-scroll>Entrar</a></li>
-                <li class="menu-item"><a href="cadastro.html" data-scroll>Registre-se</a></li>
+    <header class="header-main">
+    <a href="index.html" class="logo"><b>C</b>olabora</a>
+    <nav class="nav-collapse">
+        <ul>
+            <li class="menu-item"><a href="#home" data-scroll>Como Funciona</a></li>
+            <li class="menu-item"><a href="#about" data-scroll>Projetos</a></li>
+            <li class="menu-item"><a href="login.html" data-scroll>Entrar</a></li>
+            <li class="menu-item"><a href="cadastro.html" data-scroll>Registre-se</a></li>
+
+        </ul>
+    </nav>
+</header>
     
-            </ul>
-        </nav>
-    </header>
 
-    <section>
-        <div class="con">
+<div class="application_container_idiomas">
+    <div class='row'>
+        <div>
+            <form class="box" id="edit_user_1493702" action="#" method="post">                
+                <h1 class=border_bottom>Quais línguas você manja?</h1>
+                <div class='box_content'>
+                    <div class='row'>
+                        <div class='form_group col-md-6 col-lg-6 col-sm-6 col-xs-6'>
+                            <label for="user_spoken_languages_attributes_0_Idioma">Idioma</label>
+                            <select autofocus="autofocus" class="form_input"
+                                name="user[spoken_languages_attributes][0][language_id]"
+                                id="user_spoken_languages_attributes_0_language_id">
+                                <option value="">Escolha um idioma, por favore...</option>
+                                <option value="42">Afrikaans</option>
+                                <option value="13">Amárico</option>
+                                <option value="11">Árabe</option>
+                                <option value="48">Armênio</option>
+                                <option value="37">Basco</option>
+                                <option value="44">Búlgaro</option>
+                                <option value="9">Cambojano</option>
+                                <option value="43">Catalão</option>
+                                <option value="3">Chinês</option>
+                                <option value="45">Croata</option>
+                                <option value="46">Tcheco</option>
+                                <option value="10">Dinamarquês</option>
+                                <option value="25">Holandês</option>
+                                <option selected="selected" value="1">Inglês</option>
+                                <option value="12">Estoniano</option>
+                                <option value="14">Finlandês</option>
+                                <option value="6">Francês</option>
+                                <option value="50">Galega</option>
+                                <option value="4">Alemão</option>
+                                <option value="15">Grego</option>
+                                <option value="17">Hebraico</option>
+                                <option value="39">Hindi</option>
+                                <option value="38">Húngaro</option>
+                                <option value="16">Indonésio</option>
+                                <option value="18">Italiano</option>
+                                <option value="8">Japonês</option>
+                                <option value="20">Coreano</option>
+                                <option value="21">Laosiano</option>
+                                <option value="22">Letão</option>
+                                <option value="23">Lituano</option>
+                                <option value="24">Malaio / Malaio</option>
+                                <option value="26">Norueguês</option>
+                                <option value="49">Papiamento</option>
+                                <option value="7">Persa</option>
+                                <option value="28">Polonês</option>
+                                <option value="51">Português</option>
+                                <option value="29">Romeno</option>
+                                <option value="30">Russo</option>
+                                <option value="47">Sérvio</option>
+                                <option value="41">Sinhala</option>
+                                <option value="2">Espanhol</option>
+                                <option value="19">Swahili</option>
+                                <option value="31">Sueco</option>
+                                <option value="32">Suíço</option>
+                                <option value="40">Tagalog</option>
+                                <option value="27">Tagalog / Filipino</option>
+                                <option value="33">Tailandês</option>
+                                <option value="34">Turco</option>
+                                <option value="35">Ucraniano</option>
+                                <option value="36">Vietnamita</option>
+                            </select>
 
+                        </div>
+                        <div class='form_group col-md-6 col-lg-6 col-sm-6 col-xs-6'>
+                            <label for="user_spoken_languages_attributes_0_proficiency">Proficiência</label>
+                            <select class="form_input"
+                                name="user[spoken_languages_attributes][0][language_proficiency_id]"
+                                id="user_spoken_languages_attributes_0_language_proficiency_id">
+                                <option value="">Selecione o nível, please...</option>
+                                <option value="1">Iniciante</option>
+                                <option value="2">Intermediário</option>
+                                <option selected="selected" value="3">Fluente</option>
+                            </select>
+
+                        </div>
+                        <input type="hidden" value="2354890" name="user[spoken_languages_attributes][0][id]"
+                            id="user_spoken_languages_attributes_0_id" />
+                        <div class='form_group col-md-6 col-lg-6 col-sm-6 col-xs-6'>
+                            <label for="user_spoken_languages_attributes_1_Idioma">Idioma</label>
+                            <select autofocus="autofocus" class="form_input"
+                                name="user[spoken_languages_attributes][1][language_id]"
+                                id="user_spoken_languages_attributes_1_language_id">
+                                <option value="">Escolha um idioma, por favore...</option>
+                                <option selected="selected" value="42">Afrikaans</option>
+                                <option value="13">Amárico</option>
+                                <option value="11">Árabe</option>
+                                <option value="48">Armênio</option>
+                                <option value="37">Basco</option>
+                                <option value="44">Búlgaro</option>
+                                <option value="9">Cambojano</option>
+                                <option value="43">Catalão</option>
+                                <option value="3">Chinês</option>
+                                <option value="45">Croata</option>
+                                <option value="46">Tcheco</option>
+                                <option value="10">Dinamarquês</option>
+                                <option value="25">Holandês</option>
+                                <option value="1">Inglês</option>
+                                <option value="12">Estoniano</option>
+                                <option value="14">Finlandês</option>
+                                <option value="6">Francês</option>
+                                <option value="50">Galega</option>
+                                <option value="4">Alemão</option>
+                                <option value="15">Grego</option>
+                                <option value="17">Hebraico</option>
+                                <option value="39">Hindi</option>
+                                <option value="38">Húngaro</option>
+                                <option value="16">Indonésio</option>
+                                <option value="18">Italiano</option>
+                                <option value="8">Japonês</option>
+                                <option value="20">Coreano</option>
+                                <option value="21">Laosiano</option>
+                                <option value="22">Letão</option>
+                                <option value="23">Lituano</option>
+                                <option value="24">Malaio / Malaio</option>
+                                <option value="26">Norueguês</option>
+                                <option value="49">Papiamento</option>
+                                <option value="7">Persa</option>
+                                <option value="28">Polonês</option>
+                                <option value="51">Português</option>
+                                <option value="29">Romeno</option>
+                                <option value="30">Russo</option>
+                                <option value="47">Sérvio</option>
+                                <option value="41">Sinhala</option>
+                                <option value="2">Espanhol</option>
+                                <option value="19">Swahili</option>
+                                <option value="31">Sueco</option>
+                                <option value="32">Suíço</option>
+                                <option value="40">Tagalog</option>
+                                <option value="27">Tagalog / Filipino</option>
+                                <option value="33">Tailandês</option>
+                                <option value="34">Turco</option>
+                                <option value="35">Ucraniano</option>
+                                <option value="36">Vietnamita</option>
+                            </select>
+
+                        </div>
+                        <div class='form_group col-md-6 col-lg-6 col-sm-6 col-xs-6'>
+                            <label for="user_spoken_languages_attributes_1_proficiency">Proficiência</label>
+                            <select class="form_input"
+                                name="user[spoken_languages_attributes][1][language_proficiency_id]"
+                                id="user_spoken_languages_attributes_1_language_proficiency_id">
+                                <option value="">Selecione o nível, please...</option>
+                                <option selected="selected" value="1">Iniciante</option>
+                                <option value="2">Intermediário</option>
+                                <option value="3">Fluente</option>
+                            </select>
+
+                        </div>
+                        <input type="hidden" value="2354673" name="user[spoken_languages_attributes][1][id]"
+                            id="user_spoken_languages_attributes_1_id" />
+                    </div>
+                </div>
+                <div class='box_actions'>
+                    <input type="submit" name="commit" value="Salvar" class="btn btn_lg btn_primary"
+                        data-disable-with="Salvando, na boa..." />
+                    <a class="btn btn_lg btn_secondary" href="#">Cancelar</a>
+                </div>
+            </form>
         </div>
-    </section>
+    </div>
+
+</div>
 
 
-    <script src="js/fastclick.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/fixed-responsive-nav.js"></script>
-    <script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
