@@ -9,7 +9,7 @@ CREATE TABLE `usuario_cadastro_basico`
   `senha` varchar(8) NOT NULL,
   `dt_nasc` date NOT NULL,
   `genero` varchar(2) NOT NULL,
-  `estado` int NOT NULL
+  `estado` varchar(2) NOT NULL
 );
 
 CREATE TABLE `usuario_cadastro_complementar`
