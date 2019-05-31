@@ -15,36 +15,33 @@
 
 <body>
 
-<header class="header-main">
-    <a href="index.html" class="logo"><b>C</b>olabora</a>
-    <nav class="nav-collapse">
-        <ul>
-            <li class="menu-item"><a href="#home" data-scroll>Como Funciona</a></li>
-            <li class="menu-item"><a href="#about" data-scroll>Projetos</a></li>
-            <li class="menu-item"><a href="login.html" data-scroll>Entrar</a></li>
-            <li class="menu-item"><a href="cadastro.html" data-scroll>Registre-se</a></li>
+    <header class="header-main">
+        <a href="index.html" class="logo"><b>C</b>olabora</a>
+        <nav class="nav-collapse">
+            <ul>
+                <li class="menu-item"><a href="#home" data-scroll>Como Funciona</a></li>
+                <li class="menu-item"><a href="#about" data-scroll>Projetos</a></li>
+                <li class="menu-item"><a href="/login" data-scroll>Entrar</a></li>
+                <li class="menu-item"><a href="/cadastro" data-scroll>Registre-se</a></li>
 
-        </ul>
-    </nav>
-</header>
+            </ul>
+        </nav>
+    </header>
 
     <section class="registration">
         <div class="container-fluid">
             <div class="box registration_box">
                 <h1 class="h2 text_center">Registre-se</h1>
-                <form class="register_form inactive" id="new_user" action="#" method="POST">
+                <form class="register_form inactive" id="new_user" action="/registrar" method="POST">
                     <div class="form_group">
-                        <input autofocus="autofocus" placeholder="Nome Completo" type="text"
-                            class="form_input name_input" id="user_nome" name="nome" required>
+                        <input autofocus="autofocus" placeholder="Nome Completo" type="text" class="form_input name_input" id="user_nome" name="nome" required>
                     </div>
                     <div class="form_group">
-                        <input autofocus="autofocus" type="email" class="form_input email_input" id="user_email"
-                            placeholder="E-mail" name="email" required>
+                        <input autofocus="autofocus" type="email" class="form_input email_input" id="user_email" placeholder="E-mail" name="email" required>
                     </div>
                     <div class="form_group">
-                        <input autocomplete="off" type="password" class="form_input password_input" id="pwd"
-                            placeholder="Sua senha" name="senha" required>
-                        
+                        <input autocomplete="off" type="password" class="form_input password_input" id="pwd" placeholder="Sua senha" name="senha" required>
+
                     </div>
                     <div class="form_group">
                         <select class="form_input gender_input" name="user_gender" id="user_gender">
@@ -89,7 +86,8 @@
                     </div>
                     <div class="form_group">
                         <label class="block" for="user_aniversario">Seu aniversário?</label>
-                        <select id="user_aniversario 3i" name="user[aniversario 3i]" class="form_input form_date" required>
+                        <input type="date" name="bday" class="form_input">
+                        <!--<select id="user_aniversario 3i" name="user[aniversario 3i]" class="form_input form_date" required>
                             <option value="">Dia</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -220,13 +218,11 @@
                             <option value="1942">1942</option>
                             <option value="1941">1941</option>
                             <option value="1940">1940</option>
-                        </select>
+                        </select>-->
                     </div>
                     <div class="form_group">
-                        <input class="form_input" data-form-check-box="" type="checkbox" value="" name="user_terms"
-                            id="user_terms">
-                        <label class="small" for="user_terms"> Eu aceito os <a href="#"> termos de uso </a> e <a
-                                href="politica_privacidade.html"> privacidade </a> da
+                        <input class="form_input" data-form-check-box="" type="checkbox" value="" name="user_terms" id="user_terms">
+                        <label class="small" for="user_terms"> Eu aceito os <a href="#"> termos de uso </a> e <a href="politica_privacidade.html"> privacidade </a> da
                             Colabora</label>
                     </div>
                     <input type="submit" name="comit" value="Registrar-se" class="btn btn_lg btn_primary btn_block">

@@ -1,24 +1,26 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel='stylesheet' type='text/css' media="all">
-    
+
 </head>
 
 <body>
     <header class="header-main">
-        <a href="index.html" class="logo"><b>C</b>olabora</a>
+        <a href="index.html" class="logo"><b>C</b>olabora -- <?php echo $_SESSION["email"] ?></a>
         <nav class="nav-collapse">
             <ul>
                 <li class="menu-item"><a href="#home" data-scroll>Como Funciona</a></li>
                 <li class="menu-item"><a href="#about" data-scroll>Projetos</a></li>
                 <li class="menu-item"><a href="login.html" data-scroll>Entrar</a></li>
                 <li class="menu-item"><a href="cadastro.html" data-scroll>Registre-se</a></li>
-    
+
             </ul>
         </nav>
     </header>
@@ -26,7 +28,7 @@
         <div class="container-fluid">
             <div class="box registration_box">
                 <h1 class="h2 text_center">Entrar</h1>
-                <form class="new_user" id="new_user" action="#" method="POST">
+                <form class="new_user" id="new_user" action="/autenticar" method="POST">
                     <div class="form_group">
                         <input autofocus="autofocus" type="email" value="" class="form_input email_input" id="user_email" placeholder="E-mail" name="email" required>
                     </div>
@@ -34,11 +36,11 @@
                         <input autocomplete="off" type="password" class="form_input password_input" value="" id="pwd" placeholder="Sua senha" name="senha" required>
                     </div>
                     <div class="forgot_password_holder pb-4 pt-4">
-                         <a class="small" href="#">Deu branco na senha?</a>
-                    </div>     
+                        <a class="small" href="#">Deu branco na senha?</a>
+                    </div>
                     <input type="submit" value="Entrar" class="btn btn_lg btn_primary btn_block" />
-             </div>
-                </form>
+            </div>
+            </form>
         </div>
         <h2 class="h4 pt-5 with_link text-center">
             Não é membro ainda?

@@ -23,6 +23,7 @@ class Usuario extends Model {
 
 	//Salvar
 	public function salvar() {
+		try {
 		$query = "insert into usuario_cadastro_basico(nome, email, senha, dt_nasc, genero, estado)values(:nome, :email, :senha, :dt_nasc, :genero, :estado)";
 
 		$stmt = $this->db->prepare($query);
@@ -35,6 +36,9 @@ class Usuario extends Model {
 		$stmt->execute();
 
 		return $this;
+		} catch (Exception $e) {
+			echo 'Exceção capturada: ',  $e->getMessage(), "\n";
+		}
 
 	}
 
@@ -59,6 +63,24 @@ class Usuario extends Model {
 		$stmt->execute();
 
 		return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+	}
+
+	//Recuperar usuario por email (evitar duplicidade de cadastro)
+	public function login()
+	{
+		$query = "select id, nome, email, senha from usuario_cadastro_basico where email = :email and senha = :senha";
+		$stmt = $this->db->prepare($query);
+		$stmt-> bindValue(':email', $this->__get('email'));
+		$stmt-> bindValue(':senha', $this->__get('senha'));
+		$stmt->execute();
+
+		$resultado = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+
+		if(count( $resultado ) > 0){
+			return $resultado;
+		}
+
+		return false;
 	}
 }
 

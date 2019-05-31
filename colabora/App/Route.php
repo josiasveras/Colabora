@@ -31,6 +31,18 @@ class Route extends Bootstrap {
 			'action' => 'login'
 		);
 
+		$routes[ 'autenticar'] = array(
+			'route' => '/autenticar',
+			'controller' => 'indexController',
+			'action' => 'autenticar'
+		);
+
+		$routes['logoff'] = array(
+			'route' => '/logoff',
+			'controller' => 'indexController',
+			'action' => 'logoff'
+		);
+
 		$routes['registrar'] = array(
 			'route' => '/registrar',
 			'controller' => 'indexController',
