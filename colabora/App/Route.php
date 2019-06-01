@@ -55,6 +55,13 @@ class Route extends Bootstrap {
 			'action' => 'projeto'
 		);
 
+		$routes['cadastro_editar'] = array(
+			'route' => '/cadastro_editar',
+			'controller' => 'indexController',
+			'action' => 'cadastro_editar'
+		);
+
+
 		$this->setRoutes($routes);
 
 	}

@@ -101,6 +101,13 @@ class IndexController extends Action{
 		}
 
 	}
+
+	public function cadastro_editar() {
+
+		$this->render('cadastro_editar');
+
+	}
+
 }	
 
 ?>
