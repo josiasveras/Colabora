@@ -67,6 +67,11 @@ class Route extends Bootstrap {
 			'action' => 'editar_senha'
 		);
 
+		$routes['idiomas'] = array(
+			'route' => '/idiomas',
+			'controller' => 'indexController',
+			'action' => 'idiomas'
+		);
 
 		$this->setRoutes($routes);
 

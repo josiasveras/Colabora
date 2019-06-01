@@ -114,6 +114,12 @@ class IndexController extends Action{
 
 	}
 
+	public function idiomas() {
+
+		$this->render('idiomas');
+
+	}
+
 
 }	
 
