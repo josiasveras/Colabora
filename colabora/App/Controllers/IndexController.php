@@ -120,6 +120,12 @@ class IndexController extends Action{
 
 	}
 
+	public function interesses() {
+
+		$this->render('interesses');
+
+	}
+
 
 }	
 
