@@ -54,6 +54,8 @@ class Route extends Bootstrap {
 			'controller' => 'indexController',
 			'action' => 'projeto'
 		);
+	
+
 
 		$this->setRoutes($routes);
 
