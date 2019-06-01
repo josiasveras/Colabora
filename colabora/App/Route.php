@@ -85,6 +85,12 @@ class Route extends Bootstrap {
 			'action' => 'habilidades'
 		);
 
+		$routes['politica_privacidade'] = array(
+			'route' => '/politica_privacidade',
+			'controller' => 'indexController',
+			'action' => 'politica_privacidade'
+		);
+
 		$this->setRoutes($routes);
 
 	}

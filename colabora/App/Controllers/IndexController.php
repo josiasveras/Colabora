@@ -132,6 +132,12 @@ class IndexController extends Action{
 
 	}
 
+	public function politica_privacidade() {
+
+		$this->render('politica_privacidade');
+
+	}
+
 
 }	
 
