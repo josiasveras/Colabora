@@ -79,6 +79,12 @@ class Route extends Bootstrap {
 			'action' => 'interesses'
 		);
 
+		$routes['habilidades'] = array(
+			'route' => '/habilidades',
+			'controller' => 'indexController',
+			'action' => 'habilidades'
+		);
+
 		$this->setRoutes($routes);
 
 	}

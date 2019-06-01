@@ -126,6 +126,12 @@ class IndexController extends Action{
 
 	}
 
+	public function habilidades() {
+
+		$this->render('habilidades');
+
+	}
+
 
 }	
 
