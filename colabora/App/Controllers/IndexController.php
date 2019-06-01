@@ -108,6 +108,13 @@ class IndexController extends Action{
 
 	}
 
+	public function editar_senha() {
+
+		$this->render('editar_senha');
+
+	}
+
+
 }	
 
 ?>
