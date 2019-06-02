@@ -120,10 +120,22 @@ class IndexController extends Action{
 
 	}
 
-	public function interesses()
-	{
+	public function interesses() {
 
 		$this->render('interesses');
+
+	}
+
+	public function habilidades() {
+
+		$this->render('habilidades');
+
+	}
+
+	public function politica_privacidade() {
+
+		$this->render('politica_privacidade');
+
 	}
 
 

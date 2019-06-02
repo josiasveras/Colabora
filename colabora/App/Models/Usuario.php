@@ -11,7 +11,7 @@ class Usuario extends Model {
 	private $senha;
 	private $dt_nasc;
 	private $genero;
-	private $estado_id;
+	private $estado;
 
 	public function __get($atributo) {
 		return $this->$atributo;

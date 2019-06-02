@@ -17,8 +17,9 @@ CREATE TABLE `usuario_cadastro_complementar`
   `id` int UNIQUE PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `usuario_cadastro_basico_id` int,
   `foto` blob,
-  `idioma` varchar(30) NOT NULL,
   `interesse` varchar(30) NOT NULL
+  `interesse_2` varchar(30) NOT NULL
+  `interesse_3` varchar(30) NOT NULL
 );
 
 CREATE TABLE `habilidadeXusuario_cadastro_complementar`
