@@ -55,6 +55,14 @@ class Route extends Bootstrap {
 			'action' => 'projeto'
 		);
 
+		$routes['interesses'] = array(
+			'route' => '/interesses',
+			'controller' => 'indexController',
+			'action' => 'interesses'
+		);
+	
+
+
 		$routes['cadastro_editar'] = array(
 			'route' => '/cadastro_editar',
 			'controller' => 'indexController',

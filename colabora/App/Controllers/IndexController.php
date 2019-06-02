@@ -54,7 +54,7 @@ class IndexController extends Action{
 			}
 		}else{
 			$this->render('login');
-			echo "Tá loco cachoera?";
+			echo "Usuário inválido";
 		}
 	}
  */
