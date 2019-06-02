@@ -6,7 +6,7 @@ CREATE TABLE `usuario_cadastro_basico`
   `id` int UNIQUE PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `senha` varchar(8) NOT NULL,
+  `senha` varchar(32) NOT NULL,
   `dt_nasc` date NOT NULL,
   `genero` varchar(2) NOT NULL,
   `estado` varchar(2) NOT NULL

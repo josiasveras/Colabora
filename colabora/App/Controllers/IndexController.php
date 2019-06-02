@@ -66,7 +66,7 @@ class IndexController extends Action{
 		//('atributo', $_POST('valor recebido via POST'));
 		$usuario->__set('nome', $_POST['nome']);
 		$usuario->__set('email', $_POST['email']);
-		$usuario->__set('senha', $_POST['senha']);
+		$usuario->__set('senha', md5($_POST['senha']));//Convertendo a senha em hash md5
 		$usuario->__set('dt_nasc', $_POST['bday']);
 		$usuario->__set('genero', $_POST['user_gender']);
 		$usuario->__set('estado', $_POST['user_nationality']);
