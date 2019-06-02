@@ -32,11 +32,12 @@ class IndexController extends Action{
 
 	public function login() {
 
+		$this->view->auth = isset($_GET['auth']) ? $_GET['auth'] : '';
 		$this->render('login');
 
 	}
 
-	public function autenticar()
+	/* public function autenticar()
 	{
 		$usuario = Container::getModel('Usuario');
 		$usuario->__set('email', $_POST['email']);
@@ -44,7 +45,7 @@ class IndexController extends Action{
 
 		$getUsuario = $usuario->login();
 		if( $getUsuario){
-			/**/
+			
 			$this->render('login');
 			foreach( $getUsuario as $usuario){
 				$_SESSION["id"] = $usuario['id'];
@@ -56,13 +57,8 @@ class IndexController extends Action{
 			echo "Tá loco cachoera?";
 		}
 	}
-
-	public function logoff()
-	{
-		session_destroy();
-		header("Location: /");
-	}
-
+ */
+	
 	public function registrar() {
 
 		$usuario = Container::getModel('Usuario');
@@ -135,6 +131,12 @@ class IndexController extends Action{
 	public function politica_privacidade() {
 
 		$this->render('politica_privacidade');
+
+	}
+
+	public function projeto() {
+
+		$this->render('projeto');
 
 	}
 

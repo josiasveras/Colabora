@@ -33,13 +33,13 @@ class Route extends Bootstrap {
 
 		$routes[ 'autenticar'] = array(
 			'route' => '/autenticar',
-			'controller' => 'indexController',
+			'controller' => 'AuthController',
 			'action' => 'autenticar'
 		);
 
 		$routes['logoff'] = array(
 			'route' => '/logoff',
-			'controller' => 'indexController',
+			'controller' => 'AuthController',
 			'action' => 'logoff'
 		);
 
@@ -90,6 +90,14 @@ class Route extends Bootstrap {
 			'controller' => 'indexController',
 			'action' => 'politica_privacidade'
 		);
+
+		$routes['home_projetos'] = array(
+			'route' => '/home_projetos',
+			'controller' => 'appController',
+			'action' => 'home_projetos'
+		);
+
+		
 
 		$this->setRoutes($routes);
 

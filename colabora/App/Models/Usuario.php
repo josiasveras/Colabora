@@ -6,6 +6,7 @@ use MF\Model\Model;
 
 class Usuario extends Model {
 
+	private $id;
 	private $nome;
 	private $email;
 	private $senha;
@@ -74,13 +75,20 @@ class Usuario extends Model {
 		$stmt-> bindValue(':senha', $this->__get('senha'));
 		$stmt->execute();
 
-		$resultado = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+		$usuario = $stmt->fetch(\PDO::FETCH_ASSOC);
 
-		if(count( $resultado ) > 0){
+		if ($usuario['id'] != '' && $usuario['nome'] != '') {
+			$this->__set('id', $usuario['id']);
+			$this->__set('nome', $usuario['nome']);
+		}
+
+		return $this;
+
+		/*if(count( $resultado ) > 0){
 			return $resultado;
 		}
 
-		return false;
+		return false;*/
 	}
 }
 

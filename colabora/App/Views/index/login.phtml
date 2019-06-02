@@ -13,7 +13,7 @@
 
 <body>
     <header class="header-main">
-        <a href="index.html" class="logo"><b>C</b>olabora -- <?php echo $_SESSION["email"] ?></a>
+        <a href="index.html" class="logo"><b>C</b>olabora --<!--Aqui fica a sessão--></a>
         <nav class="nav-collapse">
             <ul>
                 <li class="menu-item"><a href="#home" data-scroll>Como Funciona</a></li>
@@ -40,6 +40,15 @@
                     </div>
                     <input type="submit" value="Entrar" class="btn btn_lg btn_primary btn_block" />
             </div>
+
+            <?php if ($this->view->auth == 'erro') { ?>
+            
+                <div class="row">
+                    <div class="col">
+                        <span class="text text-danger">Email e ou senha inválidos(s)</span>
+                    </div>
+                </div>
+            <?php } ?>
             </form>
         </div>
         <h2 class="h4 pt-5 with_link text-center">

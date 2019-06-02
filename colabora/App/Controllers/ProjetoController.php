@@ -17,7 +17,7 @@ class ProjetoController {
     // Tratando a Imagem.
     $inputImagem = $_FILES['inputImagem']['tmp_name'];
     $imagem = fopen($inputImagem, "rb");
-    $img = fread($imagem, filesize($inputImagem));*/
+    $img = fread($imagem, filesize($inputImagem));
 
 
     $projetos->__set('nome_projeto', $_POST['nome_projeto']);
