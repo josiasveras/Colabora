@@ -19,6 +19,12 @@ class Route extends Bootstrap {
 			'action' => 'index'
 		);
 
+		$routes['home'] = array(
+			'route' => '/index',
+			'controller' => 'indexController',
+			'action' => 'index'
+		);
+
 		$routes['cadastro'] = array(
 			'route' => '/cadastro',
 			'controller' => 'indexController',
