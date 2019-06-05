@@ -1,689 +1,264 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Perfil Complementar</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="css/styles.css" rel='stylesheet' type='text/css' media="all">
-        <script src="js/responsive-nav.js"></script>
-        <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-        <script src="js/jquery-2.1.4.min.js"></script>
-    </head>
 
-    <body>
-        <!--header start here-->
-                <div class="header-main">
-                <a href="index.html" class="logo" data-scroll><b>C</b>olabora</a>             
-                    
-                    <div class="w3layouts-right">
-                        <div class="profile_details_left">
-                            <!--notifications of menu start -->
-                            <ul class="nofitications-dropdown">
-                                <li class="dropdown head-dpdn">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i
-                                            class="fa fa-envelope"></i><span class="badge">3</span></a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <div class="notification_header">
-                                                <h3>You have 3 new messages</h3>
-                                            </div></li>                                       
-                                        <li><a href="#">                                                
-                                                <div class="notification_desc">
-                                                    <p>Lorem ipsum dolor</p>
-                                                    <p><span>1 hour ago</span></p>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </a></li>
-                                        <li>
-                                            <div class="notification_bottom">
-                                                <a href="#">See all messages</a>
-                                            </div></li>
-                                    </ul>
-                                </li>                           
-                                
-                            </ul>                           
-                        </div>             
-                        
-                    </div>
+<head>
+    <title>Habilidades</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel='stylesheet' type='text/css' media="all">
+    <script src="js/responsive-nav.js"></script>
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
 
-                    <div class="profile_details w3l">
-                        <ul>
-                            <li class="dropdown profile_details_drop">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                    <div class="profile_img">
-                                        <span class="prfil-img"><img src="icons/in4.jpg" alt=""> </span>
-                                        <div class="user-name">
-                                            <p>Malorum</p>
-                                            <span>Administrator</span>
-                                        </div>
-                                        <i class="fa fa-angle-down"></i>
-                                        <i class="fa fa-angle-up"></i>
-                                        <div class="clearfix"></div>
+<body>
+    <!--header start here-->
+    <div class="header-main">
+        <a href="index.html" class="logo" data-scroll><b>C</b>olabora</a>
+
+        <div class="w3layouts-right">
+            <div class="profile_details_left">
+                <!--notifications of menu start -->
+                <ul class="nofitications-dropdown">
+                    <li class="dropdown head-dpdn">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-envelope"></i><span class="badge">3</span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="notification_header">
+                                    <h3>You have 3 new messages</h3>
+                                </div>
+                            </li>
+                            <li><a href="#">
+                                    <div class="notification_desc">
+                                        <p>Lorem ipsum dolor</p>
+                                        <p><span>1 hour ago</span></p>
                                     </div>
-                                </a>
-                                <ul class="dropdown-menu drp-mnu">
-                                    <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>
-                                    <li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li>
-                                    <li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
-                                </ul>
+                                    <div class="clearfix"></div>
+                                </a></li>
+                            <li>
+                                <div class="notification_bottom">
+                                    <a href="#">See all messages</a>
+                                </div>
                             </li>
                         </ul>
-                    </div>
-    
-                    <div class="clearfix"> </div>
-                </div>
+                    </li>
 
-                <form class="new_user_skills" id="new_user_skills" action="#" method="post">
-                    <h1 class='text_center'>Quais são seus interesses?</h1>
-                    <p class='huge text_center'>Selecione a opção que mais tem a ver com você</p>
-                    <div class='row'>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_6'>
-                                    <i class='icon icon-administration mg_left_10'></i>
-                                    <dt>Administração</dt>
-                                    <dd>Ajude nos sistemas de booking e pagamentos.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="6" type="hidden" name="user_skills[skill_experiences_attributes][0][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_0_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][0][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_0__destroy" />
-                                    <select class="form_input" id="skill_proficiency_6"
-                                        name="user_skills[skill_experiences_attributes][0][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="profile_details w3l">
+            <ul>
+                <li class="dropdown profile_details_drop">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <div class="profile_img">
+                            <span class="prfil-img"><img src="icons/in4.jpg" alt=""> </span>
+                            <div class="user-name">
+                                <p>Malorum</p>
+                                <span>Administrator</span>
                             </div>
+                            <i class="fa fa-angle-down"></i>
+                            <i class="fa fa-angle-up"></i>
+                            <div class="clearfix"></div>
                         </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_26'>
-                                    <i class='icon icon-animal-care mg_left_10'></i>
-                                    <dt>Cuidado de Animais</dt>
-                                    <dd>Ajude a cuidar do bem-estar e saúde de animais.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="26" type="hidden" name="user_skills[skill_experiences_attributes][1][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_1_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][1][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_1__destroy" />
-                                    <select class="form_input" id="skill_proficiency_26"
-                                        name="user_skills[skill_experiences_attributes][1][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
+                    </a>
+                    <ul class="dropdown-menu drp-mnu">
+                        <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>
+                        <li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li>
+                        <li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="clearfix"> </div>
+    </div>
+
+    <div class="application_container container-fluid">
+        <form class="onboarding-preferences__form" id="new_user_preferences" action="#">
+            <h1 class="text_center">Quais suas Habilidades</h1>
+            <p class="huge text_center">Selecione somente até três opções</p>
+            <div class="row">
+                <!--Habilidades-->
+                <div class='col-md-4 col-lg-4'>
+                    <div class='skill_option'>
+                        <input id="habilidade_cidadania" class="checkbox_image cidadania" type="checkbox" value="cidadania" name="user_preferences[cidadania][]" />
+                        <label for="habilidade_cidadania">
+                            <div class='content'>
+                                <h4>Cidadania</h4>
                             </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_20'>
-                                    <i class='icon icon-arts mg_left_10'></i>
-                                    <dt>Artes</dt>
-                                    <dd>Ajude pintando, esculpindo ou desenhando.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="20" type="hidden" name="user_skills[skill_experiences_attributes][2][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_2_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][2][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_2__destroy" />
-                                    <select class="form_input" id="skill_proficiency_20"
-                                        name="user_skills[skill_experiences_attributes][2][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_3'>
-                                    <i class='icon icon-bartending mg_left_10'></i>
-                                    <dt>Bartender</dt>
-                                    <dd>Prepare e sirva drinks e ajude a organizar estoques.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="3" type="hidden" name="user_skills[skill_experiences_attributes][3][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_3_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][3][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_3__destroy" />
-                                    <select class="form_input" id="skill_proficiency_3"
-                                        name="user_skills[skill_experiences_attributes][3][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_25'>
-                                    <i class='icon icon-child-care mg_left_10'></i>
-                                    <dt>Cuidado de Crianças</dt>
-                                    <dd>Ajude a cuidar, educar e instruir crianças.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="25" type="hidden" name="user_skills[skill_experiences_attributes][4][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_4_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][4][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_4__destroy" />
-                                    <select class="form_input" id="skill_proficiency_25"
-                                        name="user_skills[skill_experiences_attributes][4][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_12'>
-                                    <i class='icon icon-cleaning mg_left_10'></i>
-                                    <dt>Ajuda na Limpeza</dt>
-                                    <dd>Ajude a limpar cozinhas, quartos, banheiros e outros espaços.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="12" type="hidden" name="user_skills[skill_experiences_attributes][5][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_5_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][5][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_5__destroy" />
-                                    <select class="form_input" id="skill_proficiency_12"
-                                        name="user_skills[skill_experiences_attributes][5][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_27'>
-                                    <i class='icon icon-content-writer mg_left_10'></i>
-                                    <dt>Escrever conteúdos</dt>
-                                    <dd>Crie, edite e produza conteúdos inspiradores.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="27" type="hidden" name="user_skills[skill_experiences_attributes][6][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_6_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][6][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_6__destroy" />
-                                    <select class="form_input" id="skill_proficiency_27"
-                                        name="user_skills[skill_experiences_attributes][6][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_22'>
-                                    <i class='icon icon-cooking mg_left_10'></i>
-                                    <dt>Preparar Refeições</dt>
-                                    <dd>Prepare aquele rango gostoso para hóspedes.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="22" type="hidden" name="user_skills[skill_experiences_attributes][7][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_7_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][7][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_7__destroy" />
-                                    <select class="form_input" id="skill_proficiency_22"
-                                        name="user_skills[skill_experiences_attributes][7][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_2'>
-                                    <i class='icon icon-farming mg_left_10'></i>
-                                    <dt>Ajuda em Cultivos e Colheitas</dt>
-                                    <dd>Plante, semeie e ajude em tarefas do campo.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="2" type="hidden" name="user_skills[skill_experiences_attributes][8][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_8_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][8][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_8__destroy" />
-                                    <select class="form_input" id="skill_proficiency_2"
-                                        name="user_skills[skill_experiences_attributes][8][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_1'>
-                                    <i class='icon icon-gardening mg_left_10'></i>
-                                    <dt>Jardinagem</dt>
-                                    <dd>Ajude a plantar, regar e cultivar jardins.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="1" type="hidden" name="user_skills[skill_experiences_attributes][9][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_9_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][9][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_9__destroy" />
-                                    <select class="form_input" id="skill_proficiency_1"
-                                        name="user_skills[skill_experiences_attributes][9][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_4'>
-                                    <i class='icon icon-handyman mg_left_10'></i>
-                                    <dt>Consertos Gerais</dt>
-                                    <dd>Ajude em reparos, manutenção ou a construir.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="4" type="hidden" name="user_skills[skill_experiences_attributes][10][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_10_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][10][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_10__destroy" />
-                                    <select class="form_input" id="skill_proficiency_4"
-                                        name="user_skills[skill_experiences_attributes][10][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_11'>
-                                    <i class='icon icon-housekeeping mg_left_10'></i>
-                                    <dt>Tarefas Domésticas</dt>
-                                    <dd>Ajude a trocar roupas de camas e a manter um ambiente arrumado.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="11" type="hidden" name="user_skills[skill_experiences_attributes][11][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_11_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][11][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_11__destroy" />
-                                    <select class="form_input" id="skill_proficiency_11"
-                                        name="user_skills[skill_experiences_attributes][11][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_21'>
-                                    <i class='icon icon-kitchen-hand mg_left_10'></i>
-                                    <dt>Ajudante de Cozinha</dt>
-                                    <dd>Ajude a preparar, finalizar e servir refeições.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="21" type="hidden" name="user_skills[skill_experiences_attributes][12][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_12_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][12][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_12__destroy" />
-                                    <select class="form_input" id="skill_proficiency_21"
-                                        name="user_skills[skill_experiences_attributes][12][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_19'>
-                                    <i class='icon icon-music mg_left_10'></i>
-                                    <dt>Música</dt>
-                                    <dd>Toque para entreter hóspedes, crianças ou comunidades locais.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="19" type="hidden" name="user_skills[skill_experiences_attributes][13][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_13_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][13][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_13__destroy" />
-                                    <select class="form_input" id="skill_proficiency_19"
-                                        name="user_skills[skill_experiences_attributes][13][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_24'>
-                                    <i class='icon icon-night-shift mg_left_10'></i>
-                                    <dt>Turno da Noite</dt>
-                                    <dd>Ajude nas tarefas noturnas e garanta a tranquilidade dos hóspedes</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="24" type="hidden" name="user_skills[skill_experiences_attributes][14][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_14_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][14][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_14__destroy" />
-                                    <select class="form_input" id="skill_proficiency_24"
-                                        name="user_skills[skill_experiences_attributes][14][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_10'>
-                                    <i class='icon icon-painting-and-decorating mg_left_10'></i>
-                                    <dt>Pintura e Decoração</dt>
-                                    <dd>Ajude a pintar ou redecorar espaços internos e externos.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="10" type="hidden" name="user_skills[skill_experiences_attributes][15][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_15_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][15][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_15__destroy" />
-                                    <select class="form_input" id="skill_proficiency_10"
-                                        name="user_skills[skill_experiences_attributes][15][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_13'>
-                                    <i class='icon icon-party-promoter mg_left_10'></i>
-                                    <dt>Organizar Eventos e Festas</dt>
-                                    <dd>Ajude a organizar e promover festas e atividades sociais.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="13" type="hidden" name="user_skills[skill_experiences_attributes][16][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_16_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][16][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_16__destroy" />
-                                    <select class="form_input" id="skill_proficiency_13"
-                                        name="user_skills[skill_experiences_attributes][16][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_18'>
-                                    <i class='icon icon-photography mg_left_10'></i>
-                                    <dt>Fotografia</dt>
-                                    <dd>Tire, edite e entregue fotos sensacionais.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="18" type="hidden" name="user_skills[skill_experiences_attributes][17][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_17_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][17][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_17__destroy" />
-                                    <select class="form_input" id="skill_proficiency_18"
-                                        name="user_skills[skill_experiences_attributes][17][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_5'>
-                                    <i class='icon icon-reception mg_left_10'></i>
-                                    <dt>Recepção</dt>
-                                    <dd>Ajude recebendo e atendendo hóspedes.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="5" type="hidden" name="user_skills[skill_experiences_attributes][18][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_18_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][18][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_18__destroy" />
-                                    <select class="form_input" id="skill_proficiency_5"
-                                        name="user_skills[skill_experiences_attributes][18][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_8'>
-                                    <i class='icon icon-social-media mg_left_10'></i>
-                                    <dt>Mídias Sociais</dt>
-                                    <dd>Tome conta das mídias sociais.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="8" type="hidden" name="user_skills[skill_experiences_attributes][19][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_19_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][19][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_19__destroy" />
-                                    <select class="form_input" id="skill_proficiency_8"
-                                        name="user_skills[skill_experiences_attributes][19][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_16'>
-                                    <i class='icon icon-social-work mg_left_10'></i>
-                                    <dt>Trabalho social</dt>
-                                    <dd>Ajude comunidades locais.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="16" type="hidden" name="user_skills[skill_experiences_attributes][20][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_20_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][20][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_20__destroy" />
-                                    <select class="form_input" id="skill_proficiency_16"
-                                        name="user_skills[skill_experiences_attributes][20][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_9'>
-                                    <i class='icon icon-teaching-languages mg_left_10'></i>
-                                    <dt>Ensinar Idiomas</dt>
-                                    <dd>Ensine um idioma para hóspedes ou comunidades locais.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="9" type="hidden" name="user_skills[skill_experiences_attributes][21][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_21_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][21][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_21__destroy" />
-                                    <select class="form_input" id="skill_proficiency_9"
-                                        name="user_skills[skill_experiences_attributes][21][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_15'>
-                                    <i class='icon icon-teaching-sports mg_left_10'></i>
-                                    <dt>Ensinar Esportes</dt>
-                                    <dd>Ensine ou ajude hóspedes ou comunidades locais a praticar um esporte.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="15" type="hidden" name="user_skills[skill_experiences_attributes][22][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_22_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][22][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_22__destroy" />
-                                    <select class="form_input" id="skill_proficiency_15"
-                                        name="user_skills[skill_experiences_attributes][22][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_14'>
-                                    <i class='icon icon-tour-guide mg_left_10'></i>
-                                    <dt>Guia local</dt>
-                                    <dd>Ajude a organizar e guiar tours pela cidade.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="14" type="hidden" name="user_skills[skill_experiences_attributes][23][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_23_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][23][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_23__destroy" />
-                                    <select class="form_input" id="skill_proficiency_14"
-                                        name="user_skills[skill_experiences_attributes][23][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_17'>
-                                    <i class='icon icon-video-making mg_left_10'></i>
-                                    <dt>Produção de Vídeo</dt>
-                                    <dd>Crie, edite e produza material em vídeo.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="17" type="hidden" name="user_skills[skill_experiences_attributes][24][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_24_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][24][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_24__destroy" />
-                                    <select class="form_input" id="skill_proficiency_17"
-                                        name="user_skills[skill_experiences_attributes][24][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='col-md-4 col-lg-4'>
-                            <div class='skill_option'>
-                                <dl class='box skill_option_display skill__circle-icon hover-shadow big' id='skill_7'>
-                                    <i class='icon icon-web-developer mg_left_10'></i>
-                                    <dt>Desenvolvedor Web</dt>
-                                    <dd>Ajude a programar e melhorar websites.</dd>
-                                </dl>
-                                <div class='skill_option_drawer form_group rounded'>
-                                    <input value="7" type="hidden" name="user_skills[skill_experiences_attributes][25][skill_id]"
-                                        id="user_skills_skill_experiences_attributes_25_skill_id" />
-                                    <input value="1" class="destroy_option" type="hidden"
-                                        name="user_skills[skill_experiences_attributes][25][_destroy]"
-                                        id="user_skills_skill_experiences_attributes_25__destroy" />
-                                    <select class="form_input" id="skill_proficiency_7"
-                                        name="user_skills[skill_experiences_attributes][25][skill_proficiency_id]">
-                                        <option value="">Selecionar proficiência...</option>
-                                        <option value="1">Quero aprender</option>
-                                        <option value="2">Alguma experiência</option>
-                                        <option value="3">Sou Ninja!</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
+                        </label>
                     </div>
-                    <div class='text_center mg_bot_20'>
-                        <input type="submit" name="commit" value="Salvar" class="btn btn_huge btn_primary"
-                            data-disable-with="Salavando...De boa..." />
-                    </div>
-                </form>
+                    <select class="form_input" id="skill_proficiency_6" name="user_skills[skill_experiences_attributes][0][skill_proficiency_id]">
+                        <option value="">Selecionar nivel...</option>
+                        <option value="1">Quero aprender</option>
+                        <option value="2">Alguma experiência</option>
+                        <option value="3">Expert!</option>
+                    </select>
                 </div>
-                
-                <script src="js/bootstrap.min.js"></script>
-    </body>
+                <!--fim-->
+                <!--Habilidades-->
+                <div class='col-md-4 col-lg-4'>
+                    <div class='skill_option'>
+                        <input id="habilidade_comunicacao" class="checkbox_image comunicacao" type="checkbox" value="comunicacao" name="user_preferences[comunicacao][]" />
+                        <label for="habilidade_comunicacao">
+                            <div class='content'>
+                                <h4>Comunicação e Marketing</h4>
+                            </div>
+                        </label>
+                    </div>
+                    <select class="form_input" id="skill_proficiency_6" name="user_skills[skill_experiences_attributes][0][skill_proficiency_id]">
+                        <option value="">Selecionar nivel...</option>
+                        <option value="1">Quero aprender</option>
+                        <option value="2">Alguma experiência</option>
+                        <option value="3">Expert!</option>
+                    </select>
+                </div>
+                <!--Fim-->
+                <!--Habilidades-->
+                <div class='col-md-4 col-lg-4'>
+                    <div class='skill_option'>
+                        <input id="habilidade_cozinha" class="checkbox_image cozinha" type="checkbox" value="cozinha" name="user_preferences[cozinha][]" />
+                        <label for="habilidade_cozinha">
+                            <div class='content'>
+                                <h4>Cozinha</h4>
+                            </div>
+                        </label>
+                    </div>
+                    <select class="form_input" id="skill_proficiency_6" name="user_skills[skill_experiences_attributes][0][skill_proficiency_id]">
+                        <option value="">Selecionar nivel...</option>
+                        <option value="1">Quero aprender</option>
+                        <option value="2">Alguma experiência</option>
+                        <option value="3">Expert!</option>
+                    </select>
+                </div>
+                <!--Fim-->
+                <!--Habilidades-->
+                <div class='col-md-4 col-lg-4'>
+                    <div class='skill_option'>
+                        <input id="habilidade_ensinar" class="checkbox_image ensinar" type="checkbox" value="ensinar" name="user_preferences[cidadania][]" />
+                        <label for="habilidade_ensinar">
+                            <div class='content'>
+                                <h4>Ensinar e Compartilhar</h4>
+                            </div>
+                        </label>
+                    </div>
+                    <select class="form_input" id="skill_proficiency_6" name="user_skills[skill_experiences_attributes][0][skill_proficiency_id]">
+                        <option value="">Selecionar nivel...</option>
+                        <option value="1">Quero aprender</option>
+                        <option value="2">Alguma experiência</option>
+                        <option value="3">Expert!</option>
+                    </select>
+                </div>
+                <!--Fim-->
+                <!--Habilidades-->
+                <div class='col-md-4 col-lg-4'>
+                    <div class='skill_option'>
+                        <input id="habilidade_web" class="checkbox_image web" type="checkbox" value="web" name="user_preferences[cidadania][]" />
+                        <label for="abilidade_web">
+                            <div class='content'>
+                                <h4>Desenvolvimento web</h4>
+                            </div>
+                        </label>
+                    </div>
+                    <select class="form_input" id="skill_proficiency_6" name="user_skills[skill_experiences_attributes][0][skill_proficiency_id]">
+                        <option value="">Selecionar nivel...</option>
+                        <option value="1">Quero aprender</option>
+                        <option value="2">Alguma experiência</option>
+                        <option value="3">Expert!</option>
+                    </select>
+                </div>
+                <!--Fim-->
+                <!--Habilidades-->
+                <div class='col-md-4 col-lg-4'>
+                    <div class='skill_option'>
+                        <input id="habilidade_reformas" class="checkbox_image reformas" type="checkbox" value="reformas" name="user_preferences[reformas][]" />
+                        <label for="habilidade_reformas">
+                            <div class='content'>
+                                <h4>Reformas</h4>
+                            </div>
+                        </label>
+                    </div>
+                    <select class="form_input" id="skill_proficiency_6" name="user_skills[skill_experiences_attributes][0][skill_proficiency_id]">
+                        <option value="">Selecionar nivel...</option>
+                        <option value="1">Quero aprender</option>
+                        <option value="2">Alguma experiência</option>
+                        <option value="3">Expert!</option>
+                    </select>
+                </div>
+                <!--Fim-->
+                <!--Habilidades-->
+                <div class='col-md-4 col-lg-4'>
+                    <div class='skill_option'>
+                        <input id="habilidade_decoracao" class="checkbox_image decoracao" type="checkbox" value="decoracao" name="user_preferences[decoracao][]" />
+                        <label for="habilidade_decoracao">
+                            <div class='content'>
+                                <h4>Decoração</h4>
+                            </div>
+                        </label>
+                    </div>
+                    <select class="form_input" id="skill_proficiency_6" name="user_skills[skill_experiences_attributes][0][skill_proficiency_id]">
+                        <option value="">Selecionar nivel...</option>
+                        <option value="1">Quero aprender</option>
+                        <option value="2">Alguma experiência</option>
+                        <option value="3">Expert!</option>
+                    </select>
+                </div>
+                <!--Fim-->
+                <!--Habilidades-->
+                <div class='col-md-4 col-lg-4'>
+                    <div class='skill_option'>
+                        <input id="habilidade_comunitario" class="checkbox_image comunitario" type="checkbox" value="comunitario" name="user_preferences[comunitario][]" />
+                        <label for="habilidade_comunitario">
+                            <div class='content'>
+                                <h4>Trabalho comunitário</h4>
+                            </div>
+                        </label>
+                    </div>
+                    <select class="form_input" id="skill_proficiency_6" name="user_skills[skill_experiences_attributes][0][skill_proficiency_id]">
+                        <option value="">Selecionar nivel...</option>
+                        <option value="1">Quero aprender</option>
+                        <option value="2">Alguma experiência</option>
+                        <option value="3">Expert!</option>
+                    </select>
+                </div>
+                <!--Fim-->
+                <!--Habilidades-->
+                <div class='col-md-4 col-lg-4'>
+                    <div class='skill_option'>
+                        <input id="habilidade_outros" class="checkbox_image outros" type="checkbox" value="outros" name="user_preferences[outros][]" />
+                        <label for="habilidade_outros">
+                            <div class='content'>
+                                <h4>Outros</h4>
+                            </div>
+                        </label>
+                    </div>
+                    <select class="form_input" id="skill_proficiency_6" name="user_skills[skill_experiences_attributes][0][skill_proficiency_id]">
+                        <option value="">Selecionar nivel...</option>
+                        <option value="1">Quero aprender</option>
+                        <option value="2">Alguma experiência</option>
+                        <option value="3">Expert!</option>
+                    </select>
+                </div>
+                <!--Fim-->
+
+            </div>
+    </div>
+
+    <div class="text_center mg_bot_20">
+        <input type="submit" name="commit" value="Salvar" class="btn btn_huge btn_primary" />
+    </div>
+
+    </form>
+    </div>
+    </div>
+
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
 </html>
