@@ -5,12 +5,6 @@
     <title>cadastro</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel='stylesheet' type='text/css' media="all">
-    <script src="js/responsive-nav.js"></script>
-
-
-
 </head>
 
 <body>
@@ -32,9 +26,12 @@
         <div class="container-fluid">
             <div class="box registration_box">
                 <h1 class="h2 text_center">Registre-se</h1>
-                <form class="register_form inactive" id="new_user" action="/registrar" method="POST">
+                <form class="register_form inactive needs-validation" novalidate id="new_user" action="/registrar" method="POST">
                     <div class="form_group">
                         <input autofocus="autofocus" placeholder="Nome Completo" type="text" class="form_input name_input" id="user_nome" name="nome" required>
+                        <div class="invalid-feedback">
+                            Por favor, escolha um nome de usuário.
+                        </div>
                     </div>
                     <div class="form_group">
                         <input autofocus="autofocus" type="email" class="form_input email_input" id="user_email" placeholder="E-mail" name="email" required>
@@ -225,7 +222,7 @@
                         <label class="small" for="user_terms"> Eu aceito os <a href="#"> termos de uso </a> e <a href="politica_privacidade.html"> privacidade </a> da
                             Colabora</label>
                     </div>
-                    <input type="submit" name="comit" value="Registrar-se" class="btn btn_lg btn_primary btn_block">
+                    <button type="submit" value="Registrar-se" class="btn btn_primary btn_block">Enviar</button>
                 </form>
             </div>
             <h2 class="pt-4 h4 with_link text_center">
@@ -237,10 +234,27 @@
     </section>
 
 
-    <script src="js/bootstrap.js"></script>
-    <script src="js/fastclick.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/fixed-responsive-nav.js"></script>
+
+    <script>
+        // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+                var forms = document.getElementsByClassName('register_form inactive needs-validation');
+                // Faz um loop neles e evita o envio
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
 
 
 </body>
