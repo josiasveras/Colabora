@@ -590,19 +590,6 @@ input[type="checkbox"] {
   float: right
 }
 
-.box_actions .btn_secondary {
-  margin-right: 15px
-}
-
-.box_actions.text_center .btn {
-  float: none
-}
-
-.box_actions.text_left .btn {
-  float: none;
-  margin: 0
-}
-
 .box_actions:after {
   content: " ";
   display: table;
@@ -686,19 +673,7 @@ a.small {
   display: inline-block;
   vertical-align: middle;
   font-weight: normal;
-  text-align: center;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  text-align: center; 
   font-size: 16px;
   line-height: 115%;
   color: white;
@@ -708,9 +683,9 @@ a.small {
 }
 
 .btn_lg {
-  padding: 13px 30px;
+  padding: 20px 30px;
   font-size: 18px;
-  min-width: 200px
+  min-width: 270px
 }
 
 .btn_block, input[type="submit"].btn_block {
@@ -1263,7 +1238,7 @@ h1.border_bottom {
   margin-bottom: 10px;
 }
 
-/*configurações pagina interesses*/
+/*configurações pagina interesses e habilidades*/
 
 .application_container {
   padding-top: 0px;
@@ -1366,6 +1341,24 @@ h3 {
   .small-col-lg-1 {
     width: 8.33333333%
   }
+}
+
+/*botão habilidades e interesses*/
+
+.box_actions_outros {
+  margin: 18px -25px 0px 180px;
+  padding: 20px;
+  border-radius: 0 0 5px 5px
+}
+
+.box_actions_outros .btn {
+  float: left;
+}
+
+.box_actions_outros:after {
+  content: " ";
+  display: table;
+  clear: both
 }
 
 .checkbox_image.cidadania+label {

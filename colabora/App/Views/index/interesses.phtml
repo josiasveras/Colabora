@@ -74,75 +74,117 @@
 
     <div class="application_container container-fluid">
         <h1>Bora começar, Anna ?</h1>
-        <div class="row tam">
-            <form class="onboarding-preferences__form" id="new_user_preferences" action="#">
-                <h2 class="text_center">Quais são seus interesses</h2>
+        <div class="application_container container-fluid">
+            <form class="onboarding-preferences__form" id="new_user_preferences" action="/index">
+                <h1 class="text_center">Quais seus Interesses</h1>
                 <p class="huge text_center">Selecione somente até três opções</p>
+                <div class="row tam">
+                    <!--Interesses-->
+                    <div class='col-md-4 col-lg-4'>
+                        <div class='skill_option'>
+                            <input id="habilidade_cidadania" class="checkbox_image cidadania" type="checkbox" value="cidadania" name="user_preferences[cidadania][]" />
+                            <label for="habilidade_cidadania">
+                                <div class='content'>
+                                    <h4>Cidadania</h4>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <!--fim-->
+                    <!--Interesses-->
+                    <div class='col-md-4 col-lg-4'>
+                        <div class='skill_option'>
+                            <input id="habilidade_comunicacao" class="checkbox_image comunicacao" type="checkbox" value="comunicacao" name="user_preferences[comunicacao][]" />
+                            <label for="habilidade_comunicacao">
+                                <div class='content'>
+                                    <h4>Educação</h4>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <!--Fim-->
+                    <!--Interesses-->
+                    <div class='col-md-4 col-lg-4'>
+                        <div class='skill_option'>
+                            <input id="habilidade_cozinha" class="checkbox_image cozinha" type="checkbox" value="cozinha" name="user_preferences[cozinha][]" />
+                            <label for="habilidade_cozinha">
+                                <div class='content'>
+                                    <h4>Esporte</h4>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <!--Fim-->
+                    <!--Interesses-->
+                    <div class='col-md-4 col-lg-4'>
+                        <div class='skill_option'>
+                            <input id="habilidade_ensinar" class="checkbox_image ensinar" type="checkbox" value="ensinar" name="user_preferences[cidadania][]" />
+                            <label for="habilidade_ensinar">
+                                <div class='content'>
+                                    <h4>Saúde</h4>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <!--Fim-->
+                    <!--Interesses-->
+                    <div class='col-md-4 col-lg-4'>
+                        <div class='skill_option'>
+                            <input id="habilidade_web" class="checkbox_image web" type="checkbox" value="web" name="user_preferences[web][]" />
+                            <label for="habilidade_web">
+                                <div class='content'>
+                                    <h4>Cultura</h4>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <!--Fim-->
+                    <!--Interesses-->
+                    <div class='col-md-4 col-lg-4'>
+                        <div class='skill_option'>
+                            <input id="habilidade_reformas" class="checkbox_image reformas" type="checkbox" value="reformas" name="user_preferences[reformas][]" />
+                            <label for="habilidade_reformas">
+                                <div class='content'>
+                                    <h4>Acão Social</h4>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <!--Fim-->
+                    <!--Interesses-->
+                    <div class='col-md-4 col-lg-4'>
+                        <div class='skill_option'>
+                            <input id="habilidade_decoracao" class="checkbox_image decoracao" type="checkbox" value="decoracao" name="user_preferences[decoracao][]" />
+                            <label for="habilidade_decoracao">
+                                <div class='content'>
+                                    <h4>idiomas</h4>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <!--Fim-->
+                    <!--Interesses--> 
+                    <div class='col-md-4 col-lg-4'>
+                        <div class='skill_option'>
+                            <input id="habilidade_outros" class="checkbox_image outros" type="checkbox" value="outros" name="user_preferences[outros][]" />
+                            <label for="habilidade_outros">
+                                <div class='content'>
+                                    <h4>Outros</h4>
+                                </div>
+                            </label>
+                        </div>                       
+                    </div>
+                    <!--Fim-->
 
-                <!--Interesses-->
-                <div class="small-col-lg-3 small-col-md-3 small-col-sm-4 small-col-xs-6">
-                    <input id="interesse_cidadania" class="checkbox_image cidadania" type="checkbox" value="cidadania" name="user_preferences[cidadania][]" />
-                    <label for="interesse_cidadania">
-                        <div class='content'>
-                            <h4>Cidadania</h4>
-                        </div>
-                    </label></div>
-                <div class='small-col-lg-3 small-col-md-3 small-col-sm-4 small-col-xs-6'>
-                    <input id="interesse_educacao" class="checkbox_image educacao" type="checkbox" value="educacao" name="user_preferences[educacao][]" />
-                    <label for="interesse_educacao">
-                        <div class='content'>
-                            <h4>Educação</h4>
-                        </div>
-                    </label></div>
-                <div class='small-col-lg-3 small-col-md-3 small-col-sm-4 small-col-xs-6'>
-                    <input id="interesse_esporte" class="checkbox_image esporte" type="checkbox" value="esporte" name="user_preferences[esporte][]" />
-                    <label for="interesse_esporte">
-                        <div class='content'>
-                            <h4>Esporte</h4>
-                        </div>
-                    </label></div>
-                <div class='small-col-lg-3 small-col-md-3 small-col-sm-4 small-col-xs-6'>
-                    <input id="interesse_saude" class="checkbox_image saude" type="checkbox" value="saude" name="user_preferences[saude][]" />
-                    <label for="interesse_saude">
-                        <div class='content'>
-                            <h4>Saúde</h4>
-                        </div>
-                    </label></div>
-                <div class='small-col-lg-3 small-col-md-3 small-col-sm-4 small-col-xs-6'>
-                    <input id="interesse_cultura" class="checkbox_image cultura" type="checkbox" value="english_practice" name="user_preferences[cultura][]" />
-                    <label for="interesse_cultura">
-                        <div class='content'>
-                            <h4>Cultura</h4>
-                        </div>
-                    </label></div>
-                <div class='small-col-lg-3 small-col-md-3 small-col-sm-4 small-col-xs-6'>
-                    <input id="acao_social" class="checkbox_image social" type="checkbox" value="english_practice" name="user_preferences[acao_social][]" />
-                    <label for="acao_social">
-                        <div class='content'>
-                            <h4>Ação Social</h4>
-                        </div>
-                    </label></div>
-                <div class='small-col-lg-3 small-col-md-3 small-col-sm-4 small-col-xs-6'>
-                    <input id="praticar_ingles" class="checkbox_image ingles" type="checkbox" value="english_practice" name="user_preferences[ingles][]" />
-                    <label for="praticar_ingles">
-                        <div class='content'>
-                            <h4>Práticar Inglês</h4>
-                        </div>
-                    </label></div>
-                <div class='small-col-lg-3 small-col-md-3 small-col-sm-4 small-col-xs-6'>
-                    <input id="outros" class="checkbox_image outros" type="checkbox" value="outros" name="user_preferences[outros][]" />
-                    <label for="outros">
-                        <div class='content'>
-                            <h4>Outros</h4>
-                        </div>
-                    </label>
                 </div>
-
-                <div class='text_center mg_bot_20'>
-                    <input type="submit" name="commit" value="Salvar" class="btn btn_huge btn_primary" />
-
-            </form>
         </div>
+
+        <div class='box_actions_outros'>
+            <input type="submit" name="commit" value="Proseguir" class="btn btn_lg btn_primary" id="enviar" />
+        </div>
+
+        </form>
+    </div>
     </div>
 
 </body>

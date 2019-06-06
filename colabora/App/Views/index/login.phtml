@@ -6,9 +6,7 @@
     <title>Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel='stylesheet' type='text/css' media="all">
-    <script src="js/jquery-2.1.4.min.js"></script>
+    
 </head>
 
 <body>
@@ -29,16 +27,18 @@
             <div class="box registration_box">
                 <h1 class="h2 text_center">Entrar</h1>
                 <form class="new_user" id="new_user" action="/autenticar" method="POST">
-                    <div class="form_group">
+                    <div class="form-group">
                         <input autofocus="autofocus" type="email" value="" class="form_input email_input" id="user_email" placeholder="E-mail" name="email" required>
                     </div>
-                    <div class="form_group">
+                    <div class="form-group">
                         <input autocomplete="off" type="password" class="form_input password_input" value="" id="pwd" placeholder="Sua senha" name="senha" required>
                     </div>
                     <div class="forgot_password_holder pb-4 pt-4">
                         <a class="small" href="#">Deu branco na senha?</a>
                     </div>
-                    <input type="submit" value="Entrar" class="btn btn_lg btn_primary btn_block" />
+                    <div class="form-group">
+                    <input type="submit" value="Entrar" class="btn btn_primary btn_block" />
+                    </div>
             </div>
 
             <?php if ($this->view->auth == 'erro') { ?>
@@ -57,10 +57,7 @@
             <a href="cadastro.html">Cadastre-se</a>
         </h2>
     </section>
-    <script src="js/fastclick.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/fixed-responsive-nav.js"></script>
-    <script src="js/bootstrap.js"></script>
+
 </body>
 
 </html>

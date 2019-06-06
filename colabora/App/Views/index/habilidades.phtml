@@ -5,11 +5,7 @@
     <title>Habilidades</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel='stylesheet' type='text/css' media="all">
-    <script src="js/responsive-nav.js"></script>
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-2.1.4.min.js"></script>
+    
 </head>
 
 <body>
@@ -77,7 +73,7 @@
     </div>
 
     <div class="application_container container-fluid">
-        <form class="onboarding-preferences__form" id="new_user_preferences" action="#">
+        <form class="onboarding-preferences__form" id="new_user_preferences" action="/index">
             <h1 class="text_center">Quais suas Habilidades</h1>
             <p class="huge text_center">Selecione somente até três opções</p>
             <div class="row tam">
@@ -87,7 +83,7 @@
                         <input id="habilidade_cidadania" class="checkbox_image cidadania" type="checkbox" value="cidadania" name="user_preferences[cidadania][]" />
                         <label for="habilidade_cidadania">
                             <div class='content'>
-                                <h4>Cidadania</h4>
+                                <h4>Esporte</h4>
                             </div>
                         </label>
                     </div>
@@ -141,7 +137,7 @@
                         <input id="habilidade_ensinar" class="checkbox_image ensinar" type="checkbox" value="ensinar" name="user_preferences[cidadania][]" />
                         <label for="habilidade_ensinar">
                             <div class='content'>
-                                <h4>Ensinar e Compartilhar</h4>
+                                <h4>Educação</h4>
                             </div>
                         </label>
                     </div>
@@ -156,8 +152,8 @@
                 <!--Habilidades-->
                 <div class='col-md-4 col-lg-4'>
                     <div class='skill_option'>
-                        <input id="habilidade_web" class="checkbox_image web" type="checkbox" value="web" name="user_preferences[cidadania][]" />
-                        <label for="abilidade_web">
+                        <input id="habilidade_web" class="checkbox_image web" type="checkbox" value="web" name="user_preferences[web][]" />
+                        <label for="habilidade_web">
                             <div class='content'>
                                 <h4>Desenvolvimento web</h4>
                             </div>
@@ -247,18 +243,15 @@
             </div>
     </div>
 
-    <div class="text_center mg_bot_20">
-        <input type="submit" name="commit" value="Salvar" class="btn btn_huge btn_primary" />
+    <div class='box_actions_outros'>
+        <input type="submit" name="commit" value="Proseguir" class="btn btn_lg btn_primary" id="enviar" />
     </div>
 
     </form>
     </div>
     </div>
 
-    <script src="js/fastclick.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/fixed-responsive-nav.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    
 </body>
 
 </html>
