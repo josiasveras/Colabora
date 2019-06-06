@@ -31,5 +31,12 @@
             echo('</pre>');*/
     
         }
+
+        public function perfil() {
+
+            $this->render('perfil');
+    
+        }
+
     }
 ?>
