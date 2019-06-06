@@ -136,8 +136,33 @@ class IndexController extends Action{
 
 	public function projeto() {
 
+		session_start();
+
+		if ($_SESSION['id'] != '' && $_SESSION['nome'] != '') {
+			
+		
+
+		echo '<pre>';
+		print_r($_POST);
+		echo '</pre>';
+
+		
+
+		$projeto = Container::getModel('Projeto');
+
+		$projeto->__set('id_categoria', $_POST['categoria']);
+		$projeto->__set('id_usuario', $_SESSION['id']);
+		$projeto->__set('nome_projeto', $_POST['nome_projeto']);
+		$projeto->__set('descricao', $_POST['Comment']);
+
+		$projeto->insertProjeto();
 		$this->render('projeto');
 
+		}else {
+			header('Location: /login?auth=erro');
+		}
+
+		
 	}
 
 	public function fotos()	{
