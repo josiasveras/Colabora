@@ -149,7 +149,7 @@ class IndexController extends Action{
 		
 
 		$projeto = Container::getModel('Projeto');
-		
+
 		$projeto->__set('id_categoria', $_POST['categoria']);
 		$projeto->__set('id_usuario', $_SESSION['id']);
 		$projeto->__set('nome_projeto', $_POST['nome_projeto']);
@@ -165,6 +165,11 @@ class IndexController extends Action{
 		
 	}
 
+	public function fotos()	{
+
+		$this->render('fotos');
+	}
+	
 
 }	
 
