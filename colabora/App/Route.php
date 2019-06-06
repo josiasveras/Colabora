@@ -66,8 +66,6 @@ class Route extends Bootstrap {
 			'controller' => 'indexController',
 			'action' => 'interesses'
 		);
-	
-
 
 		$routes['cadastro_editar'] = array(
 			'route' => '/cadastro_editar',
@@ -121,6 +119,12 @@ class Route extends Bootstrap {
 			'route' => '/fotos',
 			'controller' => 'indexController',
 			'action' => 'fotos'
+		);
+
+		$routes['quem_sou'] = array(
+			'route' => '/quem_sou',
+			'controller' => 'appController',
+			'action' => 'quem_sou'
 		);
 
 

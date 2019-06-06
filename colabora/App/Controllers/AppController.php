@@ -41,6 +41,12 @@
         $this->render('fotos');
     }
 
+    public function quem_sou()
+    {
+
+        $this->render('quem_sou');
+    }
+
 
     }
 ?>
