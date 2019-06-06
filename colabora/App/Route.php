@@ -29,7 +29,7 @@ class Route extends Bootstrap {
 			'route' => '/cadastro',
 			'controller' => 'indexController',
 			'action' => 'cadastro'
-		);
+		);		
 
 		$routes['login'] = array(
 			'route' => '/login',
@@ -116,6 +116,13 @@ class Route extends Bootstrap {
 			'controller' => 'appController',
 			'action' => 'perfil'
 		);
+
+		$routes['fotos'] = array(
+			'route' => '/fotos',
+			'controller' => 'indexController',
+			'action' => 'fotos'
+		);
+
 
 		$this->setRoutes($routes);
 

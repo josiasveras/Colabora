@@ -38,5 +38,11 @@
     
         }
 
+    public function fotos(){
+
+        $this->render('fotos');
+    }
+
+
     }
 ?>

@@ -1,3 +1,7 @@
+body {
+  margin: 0
+}
+
 /* ------------------------------------------
   RESPONSIVE NAV STYLES
 --------------------------------------------- */
@@ -572,6 +576,68 @@ input[type="checkbox"] {
   width: 500px;
   margin-left: 270px;
 }
+
+/*layout foto*/
+
+.box_actions {
+  margin: 15px -25px -25px -25px;
+  background-color: #1A478B;
+  padding: 20px;
+  border-radius: 0 0 5px 5px
+}
+
+.box_actions .btn {
+  float: right
+}
+
+.box_actions .btn_secondary {
+  margin-right: 15px
+}
+
+.box_actions.text_center .btn {
+  float: none
+}
+
+.box_actions.text_left .btn {
+  float: none;
+  margin: 0
+}
+
+.box_actions:after {
+  content: " ";
+  display: table;
+  clear: both
+}
+
+.form_photo {
+  margin-left: 16.66666667%;
+}
+
+.box_content {
+  margin: 20px 0
+}
+
+.box .box_content h1, .box .box_content p {
+  max-width: 100%
+}
+
+.thanks_for_endorsement .box_content {
+  padding: 40px
+}
+
+.cover_example {
+  margin-bottom: 5px;
+}
+
+.cover_example img {
+  border-radius: 3px;
+}
+
+.avatar_block {
+  max-width: 100%;
+}
+
+/*fim fotos*/
 
 .registration {
   min-height: 100%;
@@ -1629,4 +1695,10 @@ p, span, .text {
 .tam {
   margin-right: 85px;
   margin-left: 85px;
+}
+
+@media (max-width: 767px) {
+  .thanks_for_endorsement .box_content {
+    padding: 10px
+  }
 }
