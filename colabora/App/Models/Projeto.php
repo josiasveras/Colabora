@@ -51,7 +51,7 @@ class Projeto extends Model {
     $stmt->bindValue(':foto_projeto', $this->__get('foto_projeto'));
     $stmt->execute();*/
 
-    echo 'Cheguei aqui';
+    //echo 'Cheguei aqui';
 
     $query = "insert into projeto
               (categoria_id, usuario_cadastro_basico_id, nome_projeto, descricao)
