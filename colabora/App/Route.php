@@ -117,12 +117,6 @@ class Route extends Bootstrap {
 			'action' => 'perfil'
 		);
 
-		$routes['perfil'] = array(
-			'route' => '/perfil',
-			'controller' => 'appController',
-			'action' => 'perfil'
-		);
-
 		$this->setRoutes($routes);
 
 	}
