@@ -42,8 +42,6 @@ CREATE TABLE `projeto`
   `usuario_cadastro_basico_id` int,
   `nome_projeto` varchar(50) NOT NULL,
   `descricao` varchar(200) NOT NULL,
-  `atrativos` varchar(150) NOT NULL,
-  `qtd_voluntario` int NOT NULL,
   `foto_projeto` blob
 );
 
