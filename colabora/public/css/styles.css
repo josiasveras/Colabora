@@ -673,7 +673,7 @@ a.small {
   display: inline-block;
   vertical-align: middle;
   font-weight: normal;
-  text-align: center; 
+  text-align: center;
   font-size: 16px;
   line-height: 115%;
   color: white;
@@ -1344,6 +1344,12 @@ h3 {
 }
 
 /*botão habilidades e interesses*/
+
+.box_actions_outros_i {
+  margin: 18px -25px 0px 100px;
+  padding: 20px;
+  border-radius: 0 0 5px 5px
+}
 
 .box_actions_outros {
   margin: 18px -25px 0px 180px;
