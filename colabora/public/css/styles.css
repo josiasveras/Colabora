@@ -579,6 +579,16 @@ input[type="checkbox"] {
 
 /*layout foto*/
 
+.box_actions_cad {
+  margin: -25px -15px -25px -25px;
+  padding: 20px;
+  border-radius: 0 0 5px 5px
+}
+
+.box_actions_cad {
+  float: right
+}
+
 .box_actions {
   margin: 15px -25px -25px -25px;
   background-color: #1A478B;
@@ -674,12 +684,26 @@ a.small {
   vertical-align: middle;
   font-weight: normal;
   text-align: center;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   font-size: 16px;
   line-height: 115%;
   color: white;
   margin: 0;
-  padding: 15px 20px;
-  border-radius: 50px
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
 }
 
 .btn_lg {
@@ -1700,4 +1724,60 @@ p, span, .text {
   .thanks_for_endorsement .box_content {
     padding: 10px
   }
+}
+
+/*perfil*/
+
+.user-show .content-container .profile_box .profile_box_header, .admin-user-show .content-container .profile_box .profile_box_header {
+  padding-bottom: 20px;
+}
+
+.user-show, .admin-user-show {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 25px;
+}
+
+.user-show {
+  max-width: 720px;
+}
+
+@media (min-width: 768px) {
+  .user-profile .photo-wrapper .user-photo {
+    width: 100%;
+  }
+}
+
+.user-profile .photo-wrapper .user-photo {
+  border-radius: 5px;
+}
+
+.btn_secondary:active, .btn_secondary.active, .btn_secondary:visited {
+  border: 1px solid #ccd0d9;
+  color: #718696;
+}
+
+
+a:focus, a:active, a:visited {
+  color: #158cba;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  text-decoration: none;
+}
+
+.pull_right {
+  float: right;
+  margin-left: 20px;
+}
+
+.btn_sm, .btn_small {
+  font-size: 14px;
+  padding: 8px 15px;
+}
+
+.btn_secondary {
+  background-color: white;
+  border-color: #ccd0d9;
+  color: #718696;
 }
