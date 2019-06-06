@@ -27,14 +27,14 @@
     <div class="container-fluid">
       <h1 class="h2 text_center">Publique seu projeto!</h1>
       <div class="box box_pro">
-        <form class="register_form inactive" id="new_user" action="#" method="POST">
+        <form class="register_form inactive" id="new_user" action="/projeto" method="POST">
           <div class="form-group">
             <label for="user_catego">Selecione Categoria</label>
-            <select class="form_input gender_input" name="user_gender" id="user_catego">
+            <select class="form_input gender_input" name="categoria" id="user_catego">
               <option value="">Categoria</option>
-              <option value="F">Programação</option>
-              <option value="M">Programação</option>
-              <option value="N">Programação</option>
+              <option value="Programação">Programação</option>
+              <option value="Artes">Artes</option>
+              <option value="Web">Web</option>
             </select>
           </div>
           <div class="form-group">
@@ -43,7 +43,7 @@
           </div>
           <div class="form-group">
             <label for="comment">Descreva o trabalho a ser realizado</label>
-            <textarea class="form-control" rows="10" id="comment" placeholder="iclua aqui todos os detalhes que puder, incluind informações de contato (e-amil, telefone, nome)"></textarea>
+            <textarea class="form-control" name="Comment"rows="10" id="comment" placeholder="iclua aqui todos os detalhes que puder, incluind informações de contato (e-amil, telefone, nome)"></textarea>
           </div>
 
           <input type="submit" name="comit" value="Publica Projeto" class="btn btn_lg btn_primary btn_block">

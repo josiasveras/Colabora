@@ -18,8 +18,6 @@
                 header('Location: /login?auth=erro');
             }
 
-            
-
             /*$classAtual = get_class($this);
             echo($classAtual);
             session_start();
