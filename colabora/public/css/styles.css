@@ -704,8 +704,6 @@ a.small {
   border-radius: 50px;
 }
 
-}
-
 .btn_lg {
   padding: 20px 30px;
   font-size: 18px;
@@ -1395,6 +1393,12 @@ h3 {
   clear: both
 }
 
+p, span, .text {
+  color: #718696
+}
+
+/*checkbox habilidades e interesses*/
+
 .checkbox_image.cidadania+label {
   background-color: #1A478B;
 }
@@ -1459,14 +1463,11 @@ h3 {
   background-color: #1A478B;
 }
 
-p, span, .text {
-  color: #718696
-}
-
 .checkbox_image {
   display: none
 }
 
+/*este é estilo que elemento esta sem ser disparado pelo ::after*/
 .checkbox_image+label {
   padding: 20px;
   color: white;
@@ -1479,32 +1480,10 @@ p, span, .text {
   display: flex;
   height: 120px;
   width: 100%
-}
+}/*fim*/
 
-.checkbox_image+label .content {
-  align-self: flex-end;
-  position: relative;
-  z-index: 2
-}
-
-.checkbox_image+label h4, .checkbox_image+label p {
-  color: white;
-  margin: 0
-}
-
+/*disparo o elemento quando selecionado*/
 .checkbox_image+label:after {
-  font-family: "worldpackers-icons" !important;
-  content: attr(data-icon);
-  font-style: normal !important;
-  font-weight: normal;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\52";
-  background-color: white;
   color: #4e5c66;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
   border-radius: 50%;
@@ -1513,29 +1492,37 @@ p, span, .text {
   right: 10px;
   height: 26px;
   width: 26px;
-  z-index: 2;
-  font-size: 16px;
   padding: 6px 5px;
   display: none
 }
-
-.checkbox_image.block+label {
-  display: block;
-  width: 100%
-}
-
-.checkbox_image:checked+label {
-  background-color: #158cba;
-  color: white;
-  border-color: transparent
-}
-
+/*muda a cor da bolinha do checkbox*/
 .checkbox_image:checked+label:after {
   display: block;
   content: "\52";
   background-color: #6fc375;
   color: #6fc375;
+}/*fim*/
+
+/*muda a cor do elemento quando selecionado*/
+.checkbox_image:checked+label {
+  background-color: #158cba;
+  color: white;
+  border-color: transparent
+}/*fim*/
+
+.checkbox_image+label .content {
+  align-self: flex-end;
+  position: relative;
+  z-index: 2
 }
+/*cor da letra habilidades interesses*/
+
+.checkbox_image+label h4 {
+  color: white;
+  margin: 0
+}
+
+/*fim*/
 
 @media (min-width: 992px) {
   .small-col-md-1, .small-col-md-2, .small-col-md-3, .small-col-md-4, .small-col-md-5, .small-col-md-6, .small-col-md-7, .small-col-md-8, .small-col-md-9, .small-col-md-10, .small-col-md-11, .small-col-md-12 {
