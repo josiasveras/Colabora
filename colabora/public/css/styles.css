@@ -1385,6 +1385,10 @@ h3 {
   float: left;
 }
 
+.box_actions .btn_secondary {
+  margin-right: 15px;
+}
+
 .box_actions_outros:after {
   content: " ";
   display: table;
@@ -1756,7 +1760,6 @@ p, span, .text {
   border: 1px solid #ccd0d9;
   color: #718696;
 }
-
 
 a:focus, a:active, a:visited {
   color: #158cba;
