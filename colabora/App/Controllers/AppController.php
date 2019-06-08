@@ -89,8 +89,13 @@
 			header('Location: /login?auth=erro');
 		}
 		
-	}
+    }
+    
+    public function cadastro_editar() {
 
+		$this->render('cadastro_editar');
+
+	}
 
 }
 ?>

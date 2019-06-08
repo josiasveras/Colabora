@@ -98,12 +98,6 @@ class IndexController extends Action{
 
 	}
 
-	public function cadastro_editar() {
-
-		$this->render('cadastro_editar');
-
-	}
-
 	public function editar_senha() {
 
 		$this->render('editar_senha');

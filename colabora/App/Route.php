@@ -69,7 +69,7 @@ class Route extends Bootstrap {
 
 		$routes['cadastro_editar'] = array(
 			'route' => '/cadastro_editar',
-			'controller' => 'indexController',
+			'controller' => 'appController',
 			'action' => 'cadastro_editar'
 		);
 
