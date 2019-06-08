@@ -61,6 +61,12 @@ class Route extends Bootstrap {
 			'action' => 'projeto'
 		);
 
+		$routes['salvarProjeto'] = array(
+			'route' => '/salvarProjeto',
+			'controller' => 'appController',
+			'action' => 'salvarProjeto'
+		);
+
 		$routes['interesses'] = array(
 			'route' => '/interesses',
 			'controller' => 'indexController',

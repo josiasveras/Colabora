@@ -48,7 +48,21 @@
 
     }
 
-    public function projeto() {
+    public function projeto(){
+
+        session_start();
+
+        //print_r ($_SESSION);
+
+            if ($_SESSION['id'] != '' && $_SESSION['nome'] != '') {
+                $this->render('projeto');
+            }else {
+                header('Location: /login?auth=erro');
+            }
+
+    }
+
+    public function salvarProjeto() {
 
 		session_start();
 		
@@ -64,23 +78,15 @@
 
 		echo 'Cheguei aqui 2';
 
-		//$projeto = '1';
-
-		$inputImagem = $_FILES['arquivo']['tmp_name'];
+		/*$inputImagem = $_FILES['arquivo']['tmp_name'];
     	$imagem = fopen($inputImagem, "rb");
-		$img = fread($imagem, filesize($inputImagem));
-		
-		/*$projeto->__set('id_categoria', 1);
-		$projeto->__set('id_usuario', $_SESSION['id']);
-		$projeto->__set('nome_projeto', '2');
-		$projeto->__set('descricao', '3');
-		//$projetos->__set('foto_projeto', $img);*/
+		$img = fread($imagem, filesize($inputImagem));*/
 
 		$projeto->__set('id_categoria', $_POST['categoria']);
 		$projeto->__set('id_usuario', $_SESSION['id']);
 		$projeto->__set('nome_projeto', $_POST['nome_projeto']);
 		$projeto->__set('descricao', $_POST['Comment']);
-		$projeto->__set('foto_projeto', $img);
+		//$projeto->__set('foto_projeto', $img);
 
 		$projeto->insertProjeto();
 		$this->render('projeto');

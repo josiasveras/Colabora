@@ -131,8 +131,7 @@ class IndexController extends Action{
 	public function fotos()	{
 
 		$this->render('fotos');
-	}
-	
+	}	
 
 }	
 
