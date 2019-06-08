@@ -57,7 +57,7 @@ class Route extends Bootstrap {
 
 		$routes['projeto'] = array(
 			'route' => '/projeto',
-			'controller' => 'indexController',
+			'controller' => 'appController',
 			'action' => 'projeto'
 		);
 

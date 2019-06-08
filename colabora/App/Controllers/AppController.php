@@ -39,14 +39,58 @@
     public function fotos(){
 
         $this->render('fotos');
+
     }
 
-    public function quem_sou()
-    {
+    public function quem_sou(){
 
         $this->render('quem_sou');
-    }
-
 
     }
+
+    public function projeto() {
+
+		session_start();
+		
+		$this->render('projeto');
+		echo 'Cheguei aqui';
+		echo '<pre>';
+		print_r($_POST);
+		echo '</pre>';
+
+		if ($_SESSION['id'] != '' && $_SESSION['nome'] != '') {
+			
+		$projeto = Container::getModel('Projeto');
+
+		echo 'Cheguei aqui 2';
+
+		//$projeto = '1';
+
+		$inputImagem = $_FILES['arquivo']['tmp_name'];
+    	$imagem = fopen($inputImagem, "rb");
+		$img = fread($imagem, filesize($inputImagem));
+		
+		/*$projeto->__set('id_categoria', 1);
+		$projeto->__set('id_usuario', $_SESSION['id']);
+		$projeto->__set('nome_projeto', '2');
+		$projeto->__set('descricao', '3');
+		//$projetos->__set('foto_projeto', $img);*/
+
+		$projeto->__set('id_categoria', $_POST['categoria']);
+		$projeto->__set('id_usuario', $_SESSION['id']);
+		$projeto->__set('nome_projeto', $_POST['nome_projeto']);
+		$projeto->__set('descricao', $_POST['Comment']);
+		$projeto->__set('foto_projeto', $img);
+
+		$projeto->insertProjeto();
+		$this->render('projeto');
+
+		}else {
+			header('Location: /login?auth=erro');
+		}
+		
+	}
+
+
+}
 ?>

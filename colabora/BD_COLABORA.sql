@@ -24,6 +24,7 @@ CREATE TABLE `usuario_cadastro_complementar`
 
 CREATE TABLE `habilidadeXusuario_cadastro_complementar`
 (
+  `id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `usuario_cadastro_complementar_id` int,
   `habilidade_id` int,
   `nivel` varchar(30) NOT NULL
