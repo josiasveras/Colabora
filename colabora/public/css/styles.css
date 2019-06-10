@@ -1748,13 +1748,13 @@ p, span, .text {
   color: #718696;
 }
 
-a:focus, a:active, a:visited {
+/*a:focus, a:active, a:visited {
   color: #158cba;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
   text-decoration: none;
-}
+}*/
 
 .pull_right {
   float: right;
