@@ -116,11 +116,21 @@ class IndexController extends Action{
 
 	}
 
-	public function habilidades() {
+	/* public function registrarHabilidades() {
 
-		$this->render('habilidades');
+		$habilidades = Container::getModel('Habilidades');
 
-	}
+		//('atributo', $_POST('valor recebido via POST'));
+		$habilidades->__set('usuario_cadastro_complementar_id', $_POST['?']);
+		$habilidades->__set('habilidade_id', $_POST['?']);
+		$habilidades->__set('nivel', $_POST['?']);
+
+			$habilidades->salvarHabilidade();
+			
+			$this->render('login');
+			echo "Cadastro realizado com sucesso!";
+	} */
+
 
 	public function politica_privacidade() {
 
