@@ -51,24 +51,24 @@ class Projeto extends Model {
    
     echo 'Cheguei aqui 3';
     try {
-    $query = "insert into projeto 
-              (categoria_id, usuario_cadastro_basico_id, nome_projeto, descricao) 
-              values 
-              (:id_categoria, :id_usuario, :nome_projeto, :descricao)";
-    $stmt = $this->db->prepare($query);
-    $stmt->bindValue(':id_categoria', $this->__get('id_categoria'));
-    $stmt->bindValue(':id_usuario', $this->__get('id_usuario'));
-    $stmt->bindValue(':nome_projeto', $this->__get('nome_projeto'));
-    $stmt->bindValue(':descricao', $this->__get('descricao'));
-    //$stmt->bindValue(':foto_projeto', $this->__get('foto_projeto'));
-    $stmt->execute();
+      $query = "insert into projeto 
+                (categoria_id, usuario_cadastro_basico_id, nome_projeto, descricao) 
+                values 
+                (:id_categoria, :id_usuario, :nome_projeto, :descricao)";
+      $stmt = $this->db->prepare($query);
+      $stmt->bindValue(':id_categoria', $this->__get('id_categoria'));
+      $stmt->bindValue(':id_usuario', $this->__get('id_usuario'));
+      $stmt->bindValue(':nome_projeto', $this->__get('nome_projeto'));
+      $stmt->bindValue(':descricao', $this->__get('descricao'));
+      //$stmt->bindValue(':foto_projeto', $this->__get('foto_projeto'));
+      $stmt->execute();
 
-    echo 'Cheguei aqui 4';
+      echo 'Cheguei aqui 4';
 
-    return $this;
-  } catch (Exception $e) {
-    echo 'Exceção capturada: ',  $e->getMessage(), "\n";
-  }
+      return $this;
+    } catch (Exception $e) {
+      echo 'Exceção capturada: ',  $e->getMessage(), "\n";
+    }
 
   }
 
