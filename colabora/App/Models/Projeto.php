@@ -82,9 +82,10 @@ class Projeto extends Model {
       from 
         projeto as p
         left join projeto_categoria as pc on (p.categoria_id = pc.id)
-      where 
-        t.usuario_cadastro_basico_id = :usuario_cadastro_basico_id
         ";
+
+        /*sem filtrar por id 
+        (where t.usuario_cadastro_basico_id = :usuario_cadastro_basico_id) erro aqui?*/
 
     $stmt = $this->db->prepare($query);
 
