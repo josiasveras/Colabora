@@ -76,7 +76,7 @@ class IndexController extends Action{
 			$usuario->salvar();
 			
 			$this->render('login');
-			echo "Cadastro realizado com sucesso!";
+			echo "Cadastro realizado com sucesso, faça login para continuar!";
 
 		}else{
 
