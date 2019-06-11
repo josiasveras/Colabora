@@ -90,7 +90,7 @@ class Projeto extends Model {
     $stmt = $this->db->prepare($query);
 
     //Retornando apenas os projetos que o usuario cadastrou 
-    $stmt->bindValue(':usuario_cadastro_basico_id', $this->__get('usuario_cadastro_basico_id'));
+    //$stmt->bindValue(':usuario_cadastro_basico_id', $this->__get('usuario_cadastro_basico_id'));
 
     $stmt->execute();
 
