@@ -1,18 +1,18 @@
 //aqui ficarão os códigos de layout das páginas da aplicação.
 
 Telas usuario logado que precisa de autenticação usuário(cadastro) para acessar
--intereses
--habilidades
--projeto
--editar cadastro
--perfil
--fotos
--editar senha
--home
--quem sou
+-interesses-ok
+-habilidades-ok
+-projeto-ok
+-editar cadastro-ok
+-perfil-ok
+-fotos-ok
+-editar senha-ok
+-home-ok
+-quem sou-ok
 
 Tarefas Jorsias e Anna
--colocar corretamente as rotas (telas usuario logado veja acima)
+-colocar corretamente as rotas (telas usuario logado veja acima)-ok
 -validações back
 -foto usuario(menu usuario logado)
 -editar cadastro (update)
@@ -20,7 +20,7 @@ Tarefas Jorsias e Anna
 -mensagens (caso de tempo de implementar)
 -alterar senha usuario
 -excluir conta (desativar)
--quem sou (inserir banco)
+-quem sou (inserir banco)-ok
 -home (listar todos os projetos cadastrados com base no que usuário preencheu em interesses e habilidades)
 -Tela Habilidades e Intereses (permiter que usuário somente selecione 3 opções)
 -perfil(permitir que usuário edite esta tela, e retorne campos alterados e campos inseridos ao efetuar cadastro)

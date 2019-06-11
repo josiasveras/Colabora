@@ -36,11 +36,11 @@
     
         }
 
-        public function fotos(){
+        /* public function fotos(){
 
             $this->render('fotos');
 
-        }
+        } */
 
         public function quem_sou(){
 
@@ -139,6 +139,23 @@
 
             $this->render('cadastro_editar');
 
+        }
+
+        public function interesses() {
+
+            $this->render('interesses');
+    
+        }
+
+        public function fotos()	{
+
+            $this->render('fotos');
+        }	
+
+        public function editar_senha() {
+
+            $this->render('editar_senha');
+    
         }
 
     }
