@@ -6,9 +6,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementByTagName("div");
+  document.getElementById("demo").innerHTML = x.length;
+}
+
+</script>
+
 </head>
 
 <body>
+
     <!--Menu usuário logado-->
     <div class="header-main">
         <a href="index.html" class="logo"><b>C</b>olabora</a>

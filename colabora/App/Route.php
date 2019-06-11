@@ -81,7 +81,7 @@ class Route extends Bootstrap {
 
 		$routes['editar_senha'] = array(
 			'route' => '/editar_senha',
-			'controller' => 'indexController',
+			'controller' => 'appController',
 			'action' => 'editar_senha'
 		);
 
@@ -93,7 +93,7 @@ class Route extends Bootstrap {
 
 		$routes['interesses'] = array(
 			'route' => '/interesses',
-			'controller' => 'indexController',
+			'controller' => 'appController',
 			'action' => 'interesses'
 		);
 
@@ -129,7 +129,7 @@ class Route extends Bootstrap {
 
 		$routes['fotos'] = array(
 			'route' => '/fotos',
-			'controller' => 'indexController',
+			'controller' => 'appController',
 			'action' => 'fotos'
 		);
 

@@ -98,21 +98,9 @@ class IndexController extends Action{
 
 	}
 
-	public function editar_senha() {
-
-		$this->render('editar_senha');
-
-	}
-
 	public function idiomas() {
 
 		$this->render('idiomas');
-
-	}
-
-	public function interesses() {
-
-		$this->render('interesses');
 
 	}
 
@@ -137,11 +125,6 @@ class IndexController extends Action{
 		$this->render('politica_privacidade');
 
 	}
-
-	public function fotos()	{
-
-		$this->render('fotos');
-	}	
 
 }	
 
