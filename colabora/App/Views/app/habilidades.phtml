@@ -31,7 +31,8 @@
                 <!--notifications of menu start -->
                 <ul class="nofitications-dropdown">
                     <li class="dropdown head-dpdn">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-envelope"></i><span class="badge">3</span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-envelope"></i><span class="badge">3</span></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="notification_header">
@@ -63,9 +64,9 @@
                 <li class="dropdown profile_details_drop">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                         <div class="profile_img">
-                            <span class="prfil-img"><img src="icons/in4.jpg" alt=""> </span>
+                            <span class="prfil-img"><img src="icons/profile3.jpg" alt="imagem perfil"> </span>
                             <div class="user-name">
-                                <?php session_start();?>
+                                <?php session_start(); ?>
                                 <p><?php echo $_SESSION['nome']; ?></p>
                                 <span>Administrator</span>
                             </div>
@@ -75,6 +76,7 @@
                         </div>
                     </a>
                     <ul class="dropdown-menu drp-mnu">
+                        <li> <a href="/projeto"><i class="fa fa-edit"></i>Publicar Projeto</a> </li>
                         <li> <a href="/cadastro_editar"><i class="fa fa-cog"></i>Conta</a> </li>
                         <li> <a href="/perfil"><i class="fa fa-user"></i>Perfil</a> </li>
                         <li> <a href="/logoff"><i class="fa fa-sign-out"></i>Sair</a> </li>
