@@ -125,7 +125,8 @@ CREATE TABLE `projeto`
   `categoria_id` int,
   `nome_projeto` varchar(50) NOT NULL,
   `foto_projeto` blob NULL,
-  `descricao` varchar(280) NOT NULL 
+  `descricao` varchar(280) NOT NULL,
+  `data` datetime default current_timestamp
 );
 
 INSERT INTO `projeto`(`usuario_cadastro_basico_id`, `categoria_id`,`nome_projeto`,`descricao`) VALUES (1,7,'colabora', 'Criação de uma plataforma digital de gerenciamento de voluntariado');

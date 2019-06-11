@@ -72,6 +72,18 @@ class Projeto extends Model {
 
   }
 
+  //Recuperado projetos do banco
+  public function getAllProjetos() {
+
+    $query = "select id, usuario_cadastro_basico_id, categria_id, nome_projeto, foto_projeto, descricao, data from projeto";
+
+    $stmt = $this->db->prepare($query);
+    $stmt->execute();
+
+    return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+
+}
+
   //edita projeto
  /* public function updateProjeto(){
     $query

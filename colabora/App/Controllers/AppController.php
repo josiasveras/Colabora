@@ -13,6 +13,17 @@
             session_start();
 
             if ($_SESSION['id'] != '' && $_SESSION['nome'] != '') {
+
+                //recuperação dos projetos
+                $projeto = Container::getModel('Projeto');
+
+                $projetos = $projeto->getAllProjetos();
+
+                echo '<pre>';
+                print_r($projetos);
+                echo '</pre>';
+
+
                 $this->render('home_projetos');
             }else {
                 header('Location: /login?auth=erro');
@@ -89,7 +100,7 @@
             //$projeto->__set('foto_projeto', $img);
 
             $projeto->insertProjeto();
-            $this->render('projeto');
+            header('Location: /home_projetos');
 
             }else {
                 header('Location: /login?auth=erro');
