@@ -77,14 +77,14 @@ body {
   padding: 100px 0 0;
   /*height: 550px;*/
   width: 100%;
-  background-color: #fff;
+  background-color: #F8F8FF;
 }
 
 /*sobre nós*/
 
 .Service-section {
   padding: 1em 0;
-  background: #F8F8FF;
+  background: #FfF;
   text-align: center;
 }
 
@@ -100,7 +100,7 @@ body {
 /*equipe*/
 
 .Stories-section h3 {
-  color: #74C0E5;
+  color: #fff;
   font-size: 2em;
   margin: 0 auto 1.2em 0;
   font-family: 'Arimo Sans', sans-serif;
@@ -110,7 +110,7 @@ body {
 }
 
 .Stories-section {
-  background: #bd9260;
+  background: #A52A2A;
   padding: 4em 0 0 0;
 }
 
@@ -119,9 +119,62 @@ body {
 }
 
 .story-grids {
-  background-color: #111;
+  background-color: #1C1C1C;
   min-height: 500px;
 }
+
+.story-grid-text p {
+  color: #fff;
+  font-size: 1.23em;
+  line-height: 1.8em;
+  font-family: 'Arimo Sans', sans-serif;
+  font-weight: 300;
+  width: 90%;
+  margin: 0;
+}
+
+.story-grid-img img {
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border: 4px solid#68a6ca;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.story-grid.one {
+  padding: 4em 2em 0 4em;
+}
+
+.story-grid.two {
+  padding: 1.2em 2em 0 4em;
+}
+
+.story-grid.three {
+  padding: 1.2em 2em 4em 4em;
+}
+
+.story-grid.four {
+  padding: 4em 2em 0 4em;
+}
+
+.story-grid.five {
+  padding: 4em 2em 0 4em;
+}
+
+.story-grid.six {
+  padding: 4em 2em 0 4em;
+}
+
+@media (min-width: 992px) {
+.col-md-9 {
+  width: 75%;
+}
+
+/*--------*/
 
 h1 {
   margin: 0%
