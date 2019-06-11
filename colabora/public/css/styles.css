@@ -71,7 +71,7 @@ body {
 }
 
 .conteudo {
-  border-bottom: 1px solid #999;
+  /*border-bottom: 1px solid #999;*/
   text-align: center;
   padding: 100px 0 0;
   height: 800px;
@@ -1468,6 +1468,7 @@ p, span, .text {
 }
 
 /*este é estilo que elemento esta sem ser disparado pelo ::after*/
+
 .checkbox_image+label {
   padding: 20px;
   color: white;
@@ -1480,9 +1481,12 @@ p, span, .text {
   display: flex;
   height: 120px;
   width: 100%
-}/*fim*/
+}
+
+/*fim*/
 
 /*disparo o elemento quando selecionado*/
+
 .checkbox_image+label:after {
   color: #4e5c66;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
@@ -1495,26 +1499,34 @@ p, span, .text {
   padding: 6px 5px;
   display: none
 }
+
 /*muda a cor da bolinha do checkbox*/
+
 .checkbox_image:checked+label:after {
   display: block;
   content: "\52";
   background-color: #6fc375;
   color: #6fc375;
-}/*fim*/
+}
+
+/*fim*/
 
 /*muda a cor do elemento quando selecionado*/
+
 .checkbox_image:checked+label {
   background-color: #158cba;
   color: white;
   border-color: transparent
-}/*fim*/
+}
+
+/*fim*/
 
 .checkbox_image+label .content {
   align-self: flex-end;
   position: relative;
   z-index: 2
 }
+
 /*cor da letra habilidades interesses*/
 
 .checkbox_image+label h4 {
@@ -1770,4 +1782,59 @@ p, span, .text {
   background-color: white;
   border-color: #ccd0d9;
   color: #718696;
+}
+
+/*-- footer --*/
+
+.footer {
+  background-color: #1A478B;
+}
+
+.footer__bottom {
+  padding: 10px 0 40px;
+}
+
+.footer .footer__bottom p a, .footer .footer__bottom p strong {
+  font-weight: bold;
+  color: white;
+}
+
+.footer .footer__bottom p {
+  color: white;
+  margin: 0 5px 0;
+  text-align: center;
+}
+
+.footer .footer__bottom p {
+  text-align: right;
+}
+
+.copy-right-grids {
+  padding: 20px 0px;
+}
+
+.copy-left {
+  float: left;
+}
+
+.copy-right {
+  float: right;
+}
+
+.copy-right ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 0px;
+  border-left: 1px solid white;
+  padding: 0 12px;
+
+}
+
+.copy-right ul li a {
+  color: white;
+  font-size: 13px;
+}
+
+.copy-right ul li a:hover {
+  color: #ff0779;
 }
