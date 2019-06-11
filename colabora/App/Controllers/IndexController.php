@@ -98,9 +98,9 @@ class IndexController extends Action{
 
 	}
 
-	public function idiomas() {
+	public function index_projeto() {
 
-		$this->render('idiomas');
+		$this->render( 'index_projeto');
 
 	}
 

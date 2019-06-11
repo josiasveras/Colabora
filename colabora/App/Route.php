@@ -144,6 +144,12 @@ class Route extends Bootstrap {
 			'action' => 'excluir_conta'
 		);
 
+		$routes['index_projeto'] = array(
+			'route' => '/index_projeto',
+			'controller' => 'indexController',
+			'action' => 'index_projeto'
+		);
+
 
 		$this->setRoutes($routes);
 
