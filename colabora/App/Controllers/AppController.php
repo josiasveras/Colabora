@@ -157,6 +157,10 @@
             $this->render('editar_senha');
     
         }
+        public function excluir_conta()
+          {
+
+        $this->render('excluir_conta');
+             }
 
     }
-?>

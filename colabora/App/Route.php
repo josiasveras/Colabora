@@ -138,6 +138,11 @@ class Route extends Bootstrap {
 			'controller' => 'appController',
 			'action' => 'quem_sou'
 		);
+		$routes['excluir_conta'] = array(
+			'route' => '/excluir_conta',
+			'controller' => 'appController',
+			'action' => 'excluir_conta'
+		);
 
 
 		$this->setRoutes($routes);

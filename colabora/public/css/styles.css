@@ -580,7 +580,7 @@ input[type="checkbox"] {
 /*layout foto*/
 
 .box_actions_cad {
-  margin: -25px -15px -25px -25px;
+  margin: 20px -45px -25px -25px;
   padding: 20px;
   border-radius: 0 0 5px 5px
 }
@@ -705,9 +705,14 @@ a.small {
 }
 
 .btn_lg {
-  padding: 20px 30px;
+  padding: 15px 30px;
   font-size: 18px;
-  min-width: 270px
+  min-width: 190px
+}
+
+.btn_danger {
+  background-color: #cc544a;
+  color: white;
 }
 
 .btn_block, input[type="submit"].btn_block {
@@ -1827,7 +1832,6 @@ p, span, .text {
   margin: 0 0px;
   border-left: 1px solid white;
   padding: 0 12px;
-
 }
 
 .copy-right ul li a {
@@ -1838,9 +1842,11 @@ p, span, .text {
 .copy-right ul li a:hover {
   color: #ff0779;
 }
+
 /*home_projeto*/
-strong{
-  color:#686868;
+
+strong {
+  color: #686868;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
 }
