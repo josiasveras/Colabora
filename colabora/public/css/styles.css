@@ -70,12 +70,57 @@ body {
   background: #fff;
 }
 
+/*pagina inex*/
+
 .conteudo {
-  /*border-bottom: 1px solid #999;*/
   text-align: center;
   padding: 100px 0 0;
-  height: 800px;
+  height: 550px;
   width: 100%;
+  background-color: #fff;
+}
+
+/*sobre nós*/
+
+.Service-section {
+  padding: 1em 0;
+  background: #F8F8FF;
+  text-align: center;
+}
+
+.service-grid h3 {
+  color: #423a2f;
+  font-size: 1.5em;
+  margin: 0.5em auto;
+  font-family: 'Arimo Sans', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/*equipe*/
+
+.Stories-section h3 {
+  color: #74C0E5;
+  font-size: 2em;
+  margin: 0 auto 1.2em 0;
+  font-family: 'Arimo Sans', sans-serif;
+  font-weight: 500;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.Stories-section {
+  background: #bd9260;
+  padding: 4em 0 0 0;
+}
+
+.story-grid.one {
+  padding: 4em 2em 0 4em;
+}
+
+.story-grids {
+  background-color: #111;
+  min-height: 500px;
 }
 
 h1 {
@@ -517,7 +562,6 @@ p.w3ls_pvt-title {
 }
 
 .button-style:hover {
- 
   color: #ff0779;
 }
 
@@ -1793,6 +1837,7 @@ p, span, .text {
 
 .footer {
   background-color: #1A478B;
+  padding: 0.1px;
 }
 
 .footer__bottom {
