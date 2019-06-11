@@ -87,8 +87,7 @@ h1 {
 --------------------------------------------- */
 
 header {
-  background: #1A478B;
-  position: fixed;
+  position: absolute;
   z-index: 3;
   width: 100%;
 }
@@ -508,7 +507,7 @@ p.w3ls_pvt-title {
   border: none;
   color: #fff;
   font-size: 14px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   background: #45d5c0;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
@@ -518,7 +517,8 @@ p.w3ls_pvt-title {
 }
 
 .button-style:hover {
-  color: #fff;
+ 
+  color: #ff0779;
 }
 
 /* //banner */
