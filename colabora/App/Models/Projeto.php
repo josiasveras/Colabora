@@ -78,10 +78,12 @@ class Projeto extends Model {
     //Utilizando where para retornar apenas os projetos que o usuario cadastrou 
     $query = "
       select 
-        p.id, p.usuario_cadastro_basico_id, p.categoria_id, pc.nome_categoria, p.nome_projeto, p.foto_projeto, p.descricao, p.data 
+        p.id, p.usuario_cadastro_basico_id, p.categoria_id, pc.nome_categoria, p.nome_projeto, p.foto_projeto, p.descricao, DATE_FORMAT(p.data, '%d/%m/%y %H:%i') as data
       from 
         projeto as p
         left join projeto_categoria as pc on (p.categoria_id = pc.id)
+      order by
+        p.data desc
         ";
 
         /*sem filtrar por id 

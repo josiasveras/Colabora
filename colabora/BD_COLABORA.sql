@@ -125,7 +125,7 @@ CREATE TABLE `projeto`
   `categoria_id` int,
   `nome_projeto` varchar(50) NOT NULL,
   `foto_projeto` blob NULL,
-  `descricao` varchar(280) NOT NULL,
+  `descricao` varchar(600) NOT NULL,
   `data` datetime default current_timestamp
 );
 

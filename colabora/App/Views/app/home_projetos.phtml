@@ -53,7 +53,7 @@
             <div class="profile_img">
               <span class="prfil-img"><img src="icons/profile3.jpg" alt="imagem perfil"> </span>
               <div class="user-name">
-                <p>Malorum</p>
+                <p><?php echo $_SESSION['nome'];?></p>
                 <span>Administrator</span>
               </div>
               <i class="fa fa-angle-down"></i>
@@ -79,17 +79,18 @@
     <div class="row">
       <div class="col-md-8 col-lg-8 col-sm-10 col-md-offset-2 col-lg-offset-2 col-sm-offset-1">
         <form class="box" id="user_about_info" action="#" method="POST">
-          <h1 class="mg_bot_40 ">Desenvolvimento de Sites</h1>
+          <h1 class="mg_bot_40 "><?=$projeto['nome_projeto']?></h1>
           <div class='box_content'>
 
             <div class="expander" data-text-expand="Ver mais detalhes" data-text-collapse="colapsar" data-slice-point="300" inline-expander="true" data-text-prefix="...">
-              Gostaria de trabalhar para vocês para o investimento da empresa e o crescimento de atividades
-              econômicas e conhecimento até para mim mesma e ao mesmo tempo fazer uma proposta de
-              crescimento e rendimento para a empresa
+            <?=$projeto['descricao']?>
             </div>
             <br><br>
-            <strong>Categoria</strong>
-            Ti programação
+            <strong>Categoria:</strong>
+            <?=$projeto['nome_categoria']?>
+            <br><br>
+            <strong>Data:</strong>
+            <?=$projeto['data']?>
 
           </div>
           <br>
