@@ -17,12 +17,16 @@
                 //recuperação dos projetos
                 $projeto = Container::getModel('Projeto');
 
+                //Retornando apenas os projetos que o usuario cadastrou através do seu id na sessão
+                $projeto->__set('usuario_cadastro_basico_id', $_SESSION['id']);
+
                 $projetos = $projeto->getAllProjetos();
 
                 echo '<pre>';
                 print_r($projetos);
                 echo '</pre>';
 
+                $this->view->projetos = $projetos;
 
                 $this->render('home_projetos');
             }else {

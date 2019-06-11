@@ -75,9 +75,22 @@ class Projeto extends Model {
   //Recuperado projetos do banco
   public function getAllProjetos() {
 
-    $query = "select id, usuario_cadastro_basico_id, categria_id, nome_projeto, foto_projeto, descricao, data from projeto";
+    //Utilizando where para retornar apenas os projetos que o usuario cadastrou 
+    $query = "
+      select 
+        p.id, p.usuario_cadastro_basico_id, p.categoria_id, pc.nome_categoria, p.nome_projeto, p.foto_projeto, p.descricao, p.data 
+      from 
+        projeto as p
+        left join projeto_categoria as pc on (p.categoria_id = pc.id)
+      where 
+        t.usuario_cadastro_basico_id = :usuario_cadastro_basico_id
+        ";
 
     $stmt = $this->db->prepare($query);
+
+    //Retornando apenas os projetos que o usuario cadastrou 
+    $stmt->bindValue(':usuario_cadastro_basico_id', $this->__get('usuario_cadastro_basico_id'));
+
     $stmt->execute();
 
     return $stmt->fetchAll(\PDO::FETCH_ASSOC);
