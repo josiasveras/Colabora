@@ -22,9 +22,9 @@
 
                 $projetos = $projeto->getAllProjetos();
 
-                echo '<pre>';
+                /*echo '<pre>';
                 print_r($projetos);
-                echo '</pre>';
+                echo '</pre>';*/
 
                 $this->view->projetos = $projetos;
 
