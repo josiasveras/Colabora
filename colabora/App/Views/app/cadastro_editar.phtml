@@ -60,9 +60,10 @@
                         </div>
                     </a>
                     <ul class="dropdown-menu drp-mnu">
-                        <li> <a href="cadastro_editar.html"><i class="fa fa-cog"></i>Conta</a> </li>
-                        <li> <a href="#"><i class="fa fa-user"></i>Perfil</a> </li>
-                        <li> <a href="#"><i class="fa fa-sign-out"></i>Sair</a> </li>
+                        <li> <a href="/projeto"><i class="fa fa-edit"></i>Publicar Projeto</a> </li>
+                        <li> <a href="/cadastro_editar"><i class="fa fa-cog"></i>Conta</a> </li>
+                        <li> <a href="/perfil"><i class="fa fa-user"></i>Perfil</a> </li>
+                        <li> <a href="/logoff"><i class="fa fa-sign-out"></i>Sair</a> </li>
                     </ul>
                 </li>
             </ul>
@@ -77,21 +78,17 @@
                 <div class='box'>
                     <ul>
                         <li>
-                            <a class="block mg_bot_20" href="/pt-BR/me/account/edit">Informações básicas
-                            </a></li>
+                            <a class="block mg_bot_20" href="/cadastro_editar">Informações básicas</a>
+                        </li>
                         <li>
-                            <a class="block mg_bot_20" href="/pt-BR/users/1493702/contact_infos/new">Informações de contato
-                            </a></li>
+                            <a class="block mg_bot_20" href="/editar_senha">Alterar Senha</a>
+                        </li>
                         <li>
-                            <a class="block mg_bot_20" href="/pt-BR/users/edit">Trocar minha senha
-                            </a></li>
+                            <a class="block mg_bot_20" href="#">Excluir conta</a>
+                        </li>
                         <li>
-                            <a class="block mg_bot_20" href="/pt-BR/me/account/manage">Excluir conta &amp; opções de
-                                Privacidade
-                            </a></li>
-                        <li>
-                            <a class="block" href="/pt-BR/privacy">Termos de Privacidade
-                            </a></li>
+                            <a class="block" href="/politica_privacidade">Termos de Privacidade</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -99,13 +96,13 @@
             <div class="col-lg-8 col-md-8 mg_bot_20">
                 <form class="box" id="edit_user" action="cadastro_editar" method="Post">
                     <h1>Informações Pessoais</h1>
-                    <div class='box_content'>                       
-                                                  
-                            <div class="form_group" >
-                                <label for="user_first_name">Nome Completo</label>
-                                <input class="form_input" type="text" value="Adriana Diniz" name="user[first_name]" id="user_first_name" />
-                            </div>                            
-                        
+                    <div class='box_content'>
+
+                        <div class="form_group">
+                            <label for="user_first_name">Nome Completo</label>
+                            <input class="form_input" type="text" value="Adriana Diniz" name="user[first_name]" id="user_first_name" />
+                        </div>
+
                         <div class='form_group'>
                             <label for="user_email">Email</label>
                             <input class="form_input" type="email" value="dri.ragazoni@gmail.com" name="user[email]" id="user_email" />
@@ -162,16 +159,16 @@
                                 <option value="ES">Estrangeiro</option>
                             </select>
                         </div>
-                        
-                        </div>
-                        
+
                     </div>
-                    <div class="box_actions_cad">
-                        <button name="button" type="submit" class="btn btn_lg btn_primary">Salvar
-                        </button></div>
-                </form>
+
             </div>
+            <div class="box_actions_cad">
+                <button name="button" type="submit" class="btn btn_lg btn_primary">Salvar
+                </button></div>
+            </form>
         </div>
+    </div>
 
     </div>
 
