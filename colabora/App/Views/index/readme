@@ -24,6 +24,9 @@ Tarefas Jorsias e Anna
 -home (listar todos os projetos cadastrados com base no que usuário preencheu em interesses e habilidades)
 -Tela Habilidades e Intereses (permiter que usuário somente selecione 3 opções)
 -perfil(permitir que usuário edite esta tela, e retorne campos alterados e campos inseridos ao efetuar cadastro)
+-home_projetos(usuário logado) listar projetos que o usuário publicou.
+-index_projeto listar todos os projetos pblicados por qualque usuário (açõa do botão redirecionar para 
+pagina de login)
 
 Adriana 
 -tema home (usuario logado)
@@ -35,3 +38,4 @@ Adriana
 -terminar index
 -botão publicar projeto
 -verificar bug css menu
+-colocar menu usuário logado opçõa de ir para página de todos os projetos
