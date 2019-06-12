@@ -10,9 +10,11 @@
 
         public function home_projetos() {
 
-            session_start();
+                //session_start();
 
-            if ($_SESSION['id'] != '' && $_SESSION['nome'] != '') {
+                $this->validaAutenticacao();
+
+           // if ($_SESSION['id'] != '' && $_SESSION['nome'] != '') {
 
                 //recuperação dos projetos
                 $projeto = Container::getModel('Projeto');
@@ -29,9 +31,10 @@
                 $this->view->projetos = $projetos;
 
                 $this->render('home_projetos');
-            }else {
+
+           /* }else {
                 header('Location: /login?auth=erro');
-            }
+            }*/
 
             /*$classAtual = get_class($this);
             echo($classAtual);
@@ -65,15 +68,19 @@
 
         public function projeto(){
 
-            session_start();
+            //session_start();
 
-            //print_r ($_SESSION);
+            $this->validaAutenticacao();
 
-                if ($_SESSION['id'] != '' && $_SESSION['nome'] != '') {
+            $this->render('projeto');
+
+                //print_r ($_SESSION);
+
+                /*if ($_SESSION['id'] != '' && $_SESSION['nome'] != '') {
                     $this->render('projeto');
                 }else {
                     header('Location: /login?auth=erro');
-                }
+                }*/
 
         }
 
@@ -172,10 +179,21 @@
             $this->render('editar_senha');
     
         }
+
         public function excluir_conta()
           {
 
         $this->render('excluir_conta');
              }
+
+        public function validaAutenticacao() {
+
+            session_start();
+
+            if(!isset($_SESSION['id']) || $_SESSION['id'] == '' || !isset($_SESSION['nome']) || $_SESSION['nome'] == '') {
+                header('Location: /login?auth=erro');
+            }
+        
+        }
 
     }
