@@ -11,12 +11,12 @@ Telas usuario logado que precisa de autenticação usuário(cadastro) para acess
 -home-ok
 -quem sou-ok
 
-Tarefas Jorsias e Anna
+Tarefas Jorzias e Anna
 -colocar corretamente as rotas (telas usuario logado veja acima)-ok
 -validações back
 -foto usuario(menu usuario logado)
 -editar cadastro (update)
--no menu usuario logado tem que retornar nome ou e-mail do usuário
+-no menu usuario logado tem que retornar nome ou e-mail do usuário-ok
 -mensagens (caso de tempo de implementar)
 -alterar senha usuario
 -excluir conta (desativar)
