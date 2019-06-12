@@ -86,15 +86,13 @@
 
         public function salvarProjeto() {
 
-            session_start();
+            $this->validaAutenticacao();
             
             $this->render('projeto');
             echo 'Cheguei aqui';
             echo '<pre>';
             print_r($_POST);
             echo '</pre>';
-
-            if ($_SESSION['id'] != '' && $_SESSION['nome'] != '') {
                 
             $projeto = Container::getModel('Projeto');
 
@@ -112,49 +110,39 @@
 
             $projeto->insertProjeto();
             header('Location: /home_projetos');
-
-            }else {
-                header('Location: /login?auth=erro');
-            }
             
         }
 
         public function habilidades() {
 
+            $this->validaAutenticacao();
+
             $this->render('habilidades');
-    
+            
         }
 
         public function salvarHabilidade() {
 
-            session_start();
-            
+            $this->validaAutenticacao();
+
             $this->render('habilidades');
             echo 'Cheguei aqui';
-
-            if ($_SESSION['id'] != '' && $_SESSION['nome'] != '') {
                 
             $habilidades = Container::getModel('Habilidades');
 
             echo 'Cheguei aqui 2';
 
             $habilidades->__set('usuario_cadastro_basico_id', $_SESSION['id']);
-            $habilidades->__set('habilidade_id', $_POST['div_esporte']);
+            $habilidades->__set('habilidade_id', $_POST['user_preferences[reformas][]']);
             $habilidades->__set('nivel', $_POST['user_skills']);
 
             echo '<pre>';
             print_r($_POST);
             echo '</pre>';
 
-            return
-
-            $habilidades->insertHabilidades();
+            //$habilidades->insertHabilidade();
             $this->render('habilidades');
-
-            }else {
-                header('Location: /login?auth=erro');
-            }
-            
+              
         }
         
         public function cadastro_editar() {

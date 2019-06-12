@@ -7,7 +7,7 @@ use MF\Model\Model;
 class Habilidades extends Model {
 
 	private $id;
-	private $usuario_cadastro_complementar_id;
+	private $usuario_cadastro_basico_id;
 	private $habilidade_id;
 	private $nivel;
 
