@@ -230,6 +230,8 @@
                 </div>';
 
             }
+
+            $this->render('home_projetos');
               
         }
         
@@ -306,9 +308,12 @@
                 //$this->render('habilidades');
             }
 
-                echo '<pre>';
+            //header('Location: /login?auth=erro');
+            $this->render('habilidades');
+
+                /* echo '<pre>';
                 print_r($_POST);
-                echo '<pre>';
+                echo '<pre>'; */
 
             /*if ($_POST['habilidade_cidadania'] == '' && $_POST['habilidade_educacao'] == '' && $_POST['habilidade_esporte'] == '' &&
             $_POST['habilidade_saude'] == '' && $_POST['habilidade_cultura'] == '' && $_POST['habilidade_acaosocial'] == '' &&
@@ -334,7 +339,7 @@
 
             $this->render('interesses');
     
-        }
+        } 
 
         public function fotos()	{
 
@@ -364,3 +369,4 @@
         }
 
     }
+?>

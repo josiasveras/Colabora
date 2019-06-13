@@ -85,7 +85,7 @@ class IndexController extends Action{
 
 			//$cadastroOk = true;
 			
-			$this->render('interesses');
+			$this->render('login');
 
 			echo '<div align="center" class="alert alert-success" role="alert">
 			Cadastro realizado com sucesso, faça login para continuar!
@@ -163,15 +163,6 @@ class IndexController extends Action{
 		$this->render('politica_privacidade');
 
 	}
-
-	public function interesses() {
-
-		$this->validaAutenticacao();
-
-		$this->render('interesses');
-
-	}
-
 
 }	
 
