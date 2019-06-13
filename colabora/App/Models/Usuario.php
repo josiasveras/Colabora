@@ -96,6 +96,52 @@ class Usuario extends Model {
 
 		return false;*/
 	}
+
+	public function getInfoUsuario() {
+
+		$query = "select nome from usuario_cadastro_basico where id = :id_usuarios";
+		$stmt = $this->db->prepare($query);
+		$stmt->bindValue(':id_usuario', $this->__get('id'));
+		$stmt->execute();
+
+		return $stmt->fetch(\PDO::FETCH_ASSOC);
+
+	}
+
+	public function getInfoUsuarioHabilidade() {
+
+		$query = "select nome from usuario_cadastro_basico where id = :id_usuarios";
+		$stmt = $this->db->prepare($query);
+		$stmt->bindValue(':id_usuario', $this->__get('id'));
+		$stmt->execute();
+
+		return $stmt->fetch(\PDO::FETCH_ASSOC);
+
+	}
+
+	public function getInfoUsuarioQuemSou() {
+
+		$query = "select quem_sou from usuario_quem_sou where id = :id_usuarios";
+		$stmt = $this->db->prepare($query);
+		$stmt->bindValue(':id_usuario', $this->__get('id'));
+		$stmt->execute();
+
+		return $stmt->fetch(\PDO::FETCH_ASSOC);
+
+	}
+
+	public function getInfoUsuarioExperienciaDeVida() {
+
+		$query = "select educacao, experiencia_profissional from usuario_experiencia_de_vida where id = :id_usuarios";
+		$stmt = $this->db->prepare($query);
+		$stmt->bindValue(':id_usuario', $this->__get('id'));
+		$stmt->execute();
+
+		return $stmt->fetch(\PDO::FETCH_ASSOC);
+
+	}
+
+
 }
 
 
