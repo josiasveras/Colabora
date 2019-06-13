@@ -238,19 +238,15 @@
             $interesses = Container::getModel('Interesses');
 
             //if para inserir mais de uma habilidade
-            if ($_POST['habilidade_cidadania'] != '') {
+            if (isset($_POST['habilidade_cidadania'])) {
                 $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
                 $interesses->__set('interesse_id', $_POST['habilidade_cidadania']);
 
-                echo '<pre>';
-                print_r($_POST);
-                echo '<pre>';
-        
-                //$interesses->insertInteresse();
+                $interesses->insertInteresse();
                 //$this->render('habilidades');
             }
 
-            if ($_POST['habilidade_educacao'] != '') {
+            if (isset($_POST['habilidade_educacao'])) {
                 $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
                 $interesses->__set('interesse_id', $_POST['habilidade_educacao']);
             
@@ -258,7 +254,7 @@
                 //$this->render('habilidades');
             }
 
-            if ($_POST['habilidade_esporte'] != '') {
+            if (isset($_POST['habilidade_esporte'])) {
                 $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
                 $interesses->__set('interesse_id', $_POST['habilidade_esporte']);
             
@@ -266,7 +262,7 @@
                 //$this->render('habilidades');
             }
 
-            if ($_POST['habilidade_saude'] != '') {
+            if (isset($_POST['habilidade_saude'])) {
                 $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
                 $interesses->__set('interesse_id', $_POST['habilidade_saude']);
             
@@ -274,7 +270,7 @@
                 //$this->render('habilidades');
             }
 
-            if ($_POST['habilidade_cultura'] != '') {
+            if (isset($_POST['habilidade_cultura'])) {
                 $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
                 $interesses->__set('interesse_id', $_POST['habilidade_cultura']);
             
@@ -282,7 +278,7 @@
                 //$this->render('habilidades');
             }
 
-            if ($_POST['habilidade_acaosocial'] != '') {
+            if (isset($_POST['habilidade_acaosocial'])) {
                 $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
                 $interesses->__set('interesse_id', $_POST['habilidade_acaosocial']);
             
@@ -290,7 +286,7 @@
                 //$this->render('habilidades');
             }
 
-            if ($_POST['habilidade_idiomas'] != '') {
+            if (isset($_POST['habilidade_idiomas'])) {
                 $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
                 $interesses->__set('interesse_id', $_POST['habilidade_idiomas']);
             
@@ -298,7 +294,7 @@
                 //$this->render('habilidades');
             }
 
-            if ($_POST['habilidade_outros'] != '') {
+            if (isset($_POST['habilidade_outros'])) {
                 $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
                 $interesses->__set('interesse_id', $_POST['habilidade_outros']);
             
@@ -306,24 +302,11 @@
                 //$this->render('habilidades');
             }
 
-            switch ($_POST) {
-                case  '1':
-                    echo 'Foi 1';
-                    break;
-                
-                default:
-                    echo 'Deu ruim';
-                    break;
-                case  '2':
-                    echo 'Foi 2';
-                    break;
-                
-                default:
-                    # code...
-                    break;
-            }
+                echo '<pre>';
+                print_r($_POST);
+                echo '<pre>';
 
-            if ($_POST['habilidade_cidadania'] == '' && $_POST['habilidade_educacao'] == '' && $_POST['habilidade_esporte'] == '' &&
+            /*if ($_POST['habilidade_cidadania'] == '' && $_POST['habilidade_educacao'] == '' && $_POST['habilidade_esporte'] == '' &&
             $_POST['habilidade_saude'] == '' && $_POST['habilidade_cultura'] == '' && $_POST['habilidade_acaosocial'] == '' &&
             $_POST['habilidade_idiomas'] == '' && $_POST['habilidade_outros'] == ''){
 
@@ -331,7 +314,7 @@
                 Selecione ao menos um interesse
                 </div>';
 
-            }
+            }*/
               
         }
 
