@@ -10,9 +10,9 @@ class Route extends Bootstrap {
 	//Definição das rotas da nossa aplicação
 	protected function initRoutes() {
 		//arrays que administram as rotas de URL
-		$routes['home'] = array(
+		$routes['index'] = array(
 			//"Home" que é o path raiz '/'
-			'route' => '/',
+			'route' => '/index',
 			//Que aciona o "indexController" 
 			'controller' => 'indexController',
 			//Que dispara a action "index" 
@@ -20,7 +20,7 @@ class Route extends Bootstrap {
 		);
 
 		$routes['home'] = array(
-			'route' => '/index',
+			'route' => '/',
 			'controller' => 'indexController',
 			'action' => 'index'
 		);
@@ -107,6 +107,12 @@ class Route extends Bootstrap {
 			'route' => '/salvarHabilidade',
 			'controller' => 'appController',
 			'action' => 'salvarHabilidade'
+		);
+
+		$routes['salvarInteresse'] = array(
+			'route' => '/salvarInteresse',
+			'controller' => 'appController',
+			'action' => 'salvarInteresse'
 		);
 
 		$routes['politica_privacidade'] = array(
