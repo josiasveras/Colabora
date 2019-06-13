@@ -82,9 +82,11 @@ CREATE TABLE `usuario_habilidade`
 INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('esporte');
 INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('comuncação e marketing');
 INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('cozinha');
+INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('educação');
 INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('desenvolvimento web');
 INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('reformas');
 INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('decoração');
+INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('trabalho comunitário')
 INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('outros');
 
 CREATE TABLE `habilidadeXusuario_cadastro_basico`

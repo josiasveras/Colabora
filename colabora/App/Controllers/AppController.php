@@ -132,15 +132,22 @@
 
             echo 'Cheguei aqui 2';
 
+            //if $_POST['user_skills_esporte'] exemplo
+            //if para inserir mais de uma hbilidade
+
+            if (condition) {
+                # code...
+            }
+
             $habilidades->__set('usuario_cadastro_basico_id', $_SESSION['id']);
-            $habilidades->__set('habilidade_id', $_POST['user_preferences[reformas][]']);
-            $habilidades->__set('nivel', $_POST['user_skills']);
+            $habilidades->__set('habilidade_id', $_POST['habilidade_esporte']);
+            $habilidades->__set('nivel', $_POST['user_skills_esporte']);
 
             echo '<pre>';
             print_r($_POST);
             echo '</pre>';
 
-            //$habilidades->insertHabilidade();
+            $habilidades->insertHabilidade();
             $this->render('habilidades');
               
         }
