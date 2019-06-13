@@ -135,6 +135,10 @@
             //if $_POST['user_skills_esporte'] exemplo
             //if para inserir mais de uma hbilidade
 
+            if (condition) {
+                # code...
+            }
+
             $habilidades->__set('usuario_cadastro_basico_id', $_SESSION['id']);
             $habilidades->__set('habilidade_id', $_POST['habilidade_esporte']);
             $habilidades->__set('nivel', $_POST['user_skills_esporte']);
