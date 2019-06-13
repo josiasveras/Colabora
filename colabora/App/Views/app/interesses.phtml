@@ -73,16 +73,16 @@
     </div>
 
     <div class="application_container container-fluid">
-        <h1>Bora começar, Anna ?</h1>
+        <h1>Bora começar?</h1>
         <div class="application_container container-fluid">
-            <form class="onboarding-preferences__form" id="new_user_preferences" action="/index">
+            <form method="post" class="onboarding-preferences__form" id="new_user_preferences" action="/salvarInteresse">
                 <h1 class="text_center">Quais seus Interesses</h1>
                 <p class="huge text_center">Selecione somente até três opções</p>
                 <div class="row tam">
                     <!--Interesses-->
                     <div class='col-md-4 col-lg-4'>
                         <div class='skill_option'>
-                            <input id="habilidade_cidadania" class="checkbox_image cidadania" type="checkbox" value="cidadania" name="user_preferences[cidadania][]" />
+                            <input id="habilidade_cidadania" class="checkbox_image cidadania" type="checkbox" value="1" name="habilidade_cidadania" />
                             <label for="habilidade_cidadania">
                                 <div class='content'>
                                     <h4>Cidadania</h4>
@@ -94,8 +94,8 @@
                     <!--Interesses-->
                     <div class='col-md-4 col-lg-4'>
                         <div class='skill_option'>
-                            <input id="habilidade_comunicacao" class="checkbox_image comunicacao" type="checkbox" value="comunicacao" name="user_preferences[comunicacao][]" />
-                            <label for="habilidade_comunicacao">
+                            <input id="habilidade_educacao" class="checkbox_image comunicacao" type="checkbox" value="2" name="habilidade_educacao" />
+                            <label for="habilidade_educacao">
                                 <div class='content'>
                                     <h4>Educação</h4>
                                 </div>
@@ -106,8 +106,8 @@
                     <!--Interesses-->
                     <div class='col-md-4 col-lg-4'>
                         <div class='skill_option'>
-                            <input id="habilidade_cozinha" class="checkbox_image cozinha" type="checkbox" value="cozinha" name="user_preferences[cozinha][]" />
-                            <label for="habilidade_cozinha">
+                            <input id="habilidade_esporte" class="checkbox_image cozinha" type="checkbox" value="3" name="habilidade_esporte" />
+                            <label for="habilidade_esporte">
                                 <div class='content'>
                                     <h4>Esporte</h4>
                                 </div>
@@ -118,8 +118,8 @@
                     <!--Interesses-->
                     <div class='col-md-4 col-lg-4'>
                         <div class='skill_option'>
-                            <input id="habilidade_ensinar" class="checkbox_image ensinar" type="checkbox" value="ensinar" name="user_preferences[cidadania][]" />
-                            <label for="habilidade_ensinar">
+                            <input id="habilidade_saude" class="checkbox_image ensinar" type="checkbox" value="4" name="habilidade_saude" />
+                            <label for="habilidade_saude">
                                 <div class='content'>
                                     <h4>Saúde</h4>
                                 </div>
@@ -130,8 +130,8 @@
                     <!--Interesses-->
                     <div class='col-md-4 col-lg-4'>
                         <div class='skill_option'>
-                            <input id="habilidade_web" class="checkbox_image web" type="checkbox" value="web" name="user_preferences[web][]" />
-                            <label for="habilidade_web">
+                            <input id="habilidade_cultura" class="checkbox_image web" type="checkbox" value="5" name="habilidade_cultura" />
+                            <label for="habilidade_cultura">
                                 <div class='content'>
                                     <h4>Cultura</h4>
                                 </div>
@@ -142,8 +142,8 @@
                     <!--Interesses-->
                     <div class='col-md-4 col-lg-4'>
                         <div class='skill_option'>
-                            <input id="habilidade_reformas" class="checkbox_image reformas" type="checkbox" value="reformas" name="user_preferences[reformas][]" />
-                            <label for="habilidade_reformas">
+                            <input id="habilidade_acaosocial" class="checkbox_image reformas" type="checkbox" value="6" name="habilidade_acaosocial" />
+                            <label for="habilidade_acaosocial">
                                 <div class='content'>
                                     <h4>Acão Social</h4>
                                 </div>
@@ -154,8 +154,8 @@
                     <!--Interesses-->
                     <div class='col-md-4 col-lg-4'>
                         <div class='skill_option'>
-                            <input id="habilidade_decoracao" class="checkbox_image decoracao" type="checkbox" value="decoracao" name="user_preferences[decoracao][]" />
-                            <label for="habilidade_decoracao">
+                            <input id="habilidade_idiomas" class="checkbox_image decoracao" type="checkbox" value="7" name="habilidade_idiomas" />
+                            <label for="habilidade_idiomas">
                                 <div class='content'>
                                     <h4>idiomas</h4>
                                 </div>
@@ -166,7 +166,7 @@
                     <!--Interesses-->
                     <div class='col-md-4 col-lg-4'>
                         <div class='skill_option'>
-                            <input id="habilidade_outros" class="checkbox_image outros" type="checkbox" value="outros" name="user_preferences[outros][]" />
+                            <input id="habilidade_outros" class="checkbox_image outros" type="checkbox" value="8" name="habilidade_outros" />
                             <label for="habilidade_outros">
                                 <div class='content'>
                                     <h4>Outros</h4>

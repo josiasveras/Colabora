@@ -213,7 +213,7 @@
 
             if ($_POST['user_skills_esporte'] == '' && $_POST['user_skills_comunicacao'] == '' && $_POST['user_skills_cozinha'] == '' &&
             $_POST['user_skills_ensinar'] == '' && $_POST['user_skills_devweb'] == '' && $_POST['user_skills_reformas'] == '' &&
-            $_POST['user_skills_decoracao'] == ''){
+            $_POST['user_skills_decoracao'] == '' && $_POST['user_skills_comunitario'] == '' && $_POST['user_skills_outros'] == ''){
 
                 echo '<div align="center" class="alert alert-danger" role="alert">
                 Selecione ao menos uma categoria
@@ -223,6 +223,95 @@
               
         }
         
+        public function salvarInteresse() {
+
+            $this->validaAutenticacao();
+
+            $this->render('interesses');
+                
+            $interesses = Container::getModel('Interesses');
+
+            //if para inserir mais de uma habilidade
+            if ($_POST['habilidade_cidadania'] != '') {
+                $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
+                $interesses->__set('interesse_id', $_POST['habilidade_cidadania']);
+
+                echo '<pre>';
+                print_r($_POST);
+                echo '<pre>';
+        
+                $interesses->insertInteresse();
+                //$this->render('habilidades');
+            }
+
+            if ($_POST['habilidade_educacao'] != '') {
+                $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
+                $interesses->__set('interesse_id', $_POST['habilidade_educacao']);
+            
+                $interesses->insertInteresse();
+                //$this->render('habilidades');
+            }
+
+            if ($_POST['habilidade_esporte'] != '') {
+                $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
+                $interesses->__set('interesse_id', $_POST['habilidade_esporte']);
+            
+                $interesses->insertInteresse();
+                //$this->render('habilidades');
+            }
+
+            if ($_POST['habilidade_saude'] != '') {
+                $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
+                $interesses->__set('interesse_id', $_POST['habilidade_saude']);
+            
+                $interesses->insertInteresse();
+                //$this->render('habilidades');
+            }
+
+            if ($_POST['habilidade_cultura'] != '') {
+                $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
+                $interesses->__set('interesse_id', $_POST['habilidade_cultura']);
+            
+                $interesses->insertInteresse();
+                //$this->render('habilidades');
+            }
+
+            if ($_POST['habilidade_acaosocial'] != '') {
+                $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
+                $interesses->__set('interesse_id', $_POST['habilidade_acaosocial']);
+            
+                $interesses->insertInteresse();
+                //$this->render('habilidades');
+            }
+
+            if ($_POST['habilidade_idiomas'] != '') {
+                $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
+                $interesses->__set('interesse_id', $_POST['habilidade_idiomas']);
+            
+                $interesses->insertInteresse();
+                //$this->render('habilidades');
+            }
+
+            if ($_POST['habilidade_outros'] != '') {
+                $interesses->__set('usuario_cadastro_basico_id', $_SESSION['id']);
+                $interesses->__set('interesse_id', $_POST['habilidade_outros']);
+            
+                $interesses->insertInteresse();
+                //$this->render('habilidades');
+            }
+
+            if ($_POST['habilidade_cidadania'] == '' && $_POST['habilidade_educacao'] == '' && $_POST['habilidade_esporte'] == '' &&
+            $_POST['habilidade_saude'] == '' && $_POST['habilidade_cultura'] == '' && $_POST['habilidade_acaosocial'] == '' &&
+            $_POST['habilidade_idiomas'] == '' && $_POST['habilidade_outros'] == ''){
+
+                echo '<div align="center" class="alert alert-danger" role="alert">
+                Selecione ao menos um interesse
+                </div>';
+
+            }
+              
+        }
+
         public function cadastro_editar() {
 
             $this->render('cadastro_editar');

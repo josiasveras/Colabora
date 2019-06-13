@@ -4,12 +4,11 @@ namespace App\Models;
 
 use MF\Model\Model;
 
-class Habilidades extends Model {
+class Interesses extends Model {
 
 	private $id;
 	private $usuario_cadastro_basico_id;
-	private $interesse;
-	private $nivel;
+	private $interesse_id;
 
     public function __get($atributo) {
 		return $this->$atributo;
@@ -20,14 +19,13 @@ class Habilidades extends Model {
     }
     
     //Salvar
-	public function insertHabilidade() {
+	public function insertInteresse() {
 		try {
-		$query = "insert into habilidadeXusuario_cadastro_basico(usuario_cadastro_basico_id,habilidade_id,nivel)values(:usuario_cadastro_basico_id,:habilidade_id,:nivel)";
+		$query = "insert into interesseXusuario_cadastro_basico(usuario_cadastro_basico_id,interesse_id)values(:usuario_cadastro_basico_id,:interesse_id)";
 
 		$stmt = $this->db->prepare($query);
 		$stmt->bindValue(':usuario_cadastro_basico_id', $this->__get('usuario_cadastro_basico_id'));
-		$stmt->bindValue(':habilidade_id', $this->__get('habilidade_id'));
-		$stmt->bindValue(':nivel', $this->__get('nivel'));
+		$stmt->bindValue(':interesse_id', $this->__get('interesse_id'));
 		$stmt->execute();
 
 		return $this;

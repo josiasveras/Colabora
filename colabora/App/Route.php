@@ -109,6 +109,12 @@ class Route extends Bootstrap {
 			'action' => 'salvarHabilidade'
 		);
 
+		$routes['salvarInteresse'] = array(
+			'route' => '/salvarInteresse',
+			'controller' => 'appController',
+			'action' => 'salvarInteresse'
+		);
+
 		$routes['politica_privacidade'] = array(
 			'route' => '/politica_privacidade',
 			'controller' => 'indexController',
