@@ -12,6 +12,11 @@
         <a href="index.html" class="logo" data-scroll><b>C</b>olabora</a>
 
         <div class="w3layouts-right">
+            <nav class="menu_logado">
+                <ul class="menu">
+                    <li class="item"><a href="/index_projeto">Projetos</a></li>
+                </ul>
+            </nav>
             <div class="profile_details_left">
                 <!--notifications of menu start -->
                 <ul class="nofitications-dropdown">
@@ -48,9 +53,10 @@
                         <div class="profile_img">
                             <span class="prfil-img"><img src="icons/in4.jpg" alt="foto de perfil usuário"> </span>
                             <div class="user-name">
-                                <?php session_start();?>
-                                <p><?php echo $_SESSION['nome'];?></p>
-                                <span>Administrator</span>
+                                <?php session_start(); ?>
+                                <span>
+                                    <p><?php echo $_SESSION['nome']; ?></p>
+                                </span>
                             </div>
                             <i class="fa fa-angle-down"></i>
                             <i class="fa fa-angle-up"></i>
@@ -62,7 +68,7 @@
                         <li> <a href="/cadastro_editar"><i class="fa fa-cog"></i>Conta</a> </li>
                         <li> <a href="/perfil"><i class="fa fa-user"></i>Perfil</a> </li>
                         <li> <a href="/logoff"><i class="fa fa-sign-out"></i>Sair</a> </li>
-                       
+
                     </ul>
                 </li>
             </ul>
@@ -90,12 +96,12 @@
                                     </li>
                                     <li>
                                         <p class='no_margin'>
-                                            <strong>Nacionalidade:</strong>
-                                            Brasil
+                                            <strong>Localidade:</strong>
+                                            São Paulo
                                         </p>
                                     </li>
-                                </ul>
-                                <hr class='visible-xs'>
+
+                                    <hr class='visible-xs'>
                             </div>
                             <div class='col-lg-6 col-md-7'>
                             </div>
@@ -103,39 +109,79 @@
                     </div>
                 </div>
 
+                <!--editar Habilidades-->
+                <div class='profile_box' id='skills'>
+                    <div class='profile_box_header'>
+                        <h2>Habilidades</h2>
+                        <a class="btn btn_secondary btn_small pull_right" href="/habilidades">
+                            Editar
+                        </a>
+                    </div>
+                    <div class='content'>
+                        <div class='skill-level'>
+                            <h5>Quero aprender</h5>
 
-                <div class='visible-xs sticky_cta'></div>
+                            <div class='row'>
+                                <ul>
+                                    <div class='col-sm-12 col-md-6'>
+                                        <li class='mg_bot_10'>
+                                            <i class='icon icon-administration'></i>
+                                            <span>Administração</span>
+                                        </li>
 
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class='skill-level'>
+                            <h5>Expert!</h5>
 
-                <div class='box_bottom margin_top'>
-                    <a class="btn btn_secondary btn_small hidden-lg hidden-sm hidden-md" data-toggle="modal" data-target="#new_language_modal" href="#">Adicionar idioma
-                        <i class='icon icon-plus left sm'></i>
-                    </a></div>
-            </div>
+                            <div class='row'>
+                                <ul>
+                                    <div class='col-sm-12 col-md-6'>
+                                        <li class='mg_bot_10'>
+                                            <i class='icon icon-cooking'></i>
+                                            <span>Preparar Refeições</span>
+                                        </li>
 
-            <div class='profile_box' id='profile-skills'>
-                <div class='profile_box_header'>
-                    <h2>Habilidades</h2>
-                    <a class="btn btn_secondary btn_small pull_right" href="/habilidades">Editar
-                        <i class='icon icon-pencil left'></i>
-                    </a>
-                </div>
-                <div class='content'>
-                </div>
-            </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class='profile_box' id='profile-about'>
-                <div class='profile_box_header'>
-                    <h2>Quem sou eu</h2>
-                    <a class="btn btn_small btn_secondary pull_right" href="/quem_sou">Editar
-                        <i class='icon icon-pencil left'></i>
-                    </a>
-                </div>
-                <div class='profile_section_content'>
-                    <p>Conte um pouco mais sobre você para o mundo. Isso cria uma conexão profunda entre você e as pessoas, pode acreditar :)</p>
-                </div>
-            </div>
-
+                    <!--editar Sobre Mim-->
+                    <div class='profile_box' id='profile-about'>
+                        <div class='profile_box_header'>
+                            <h2>Sobre mim</h2>
+                            <a class="btn btn_small btn_secondary pull_right" href="/quem_sou">
+                                Editar
+                            </a>
+                        </div>
+                        <div class='profile_section_content'>
+                            <p>Sou uma pessoa feliz,
+                                Amo muito a vida
+                                E dela sou aprendiz;
+                                Tenho várias paixões,
+                                Mas, como qualquer um,
+                                Possuo imperfeições.
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <!--editar experiencias de vida -->
+                    <div class="profile_box" id="profile-live">
+                        <div class='profile_box_header'>
+                            <h2>Experiências de vida</h2>
+                            <a class="btn btn_secondary btn_small pull_right" href="/experiencias">
+                            Editar
+                            </a>
+                        </div>
+                        <h4>Educação</h4>
+                        <p class='mg_bot_20'>TSI</p>
+                        <h4>Experiências profissionais</h4>
+                        <p class='mg_bot_20'>nenhuma</p>
+                    </div>
 
 </body>
 
