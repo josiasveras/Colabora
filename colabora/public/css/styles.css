@@ -1719,3 +1719,24 @@ body {
   -moz-opacity: 0;
   filter: alpha(opacity=0);
 }
+
+.notice {
+  padding: 15px 20px;
+  border-radius: 3px;
+  display: inline-block;
+  border: 1px solid #379E3B;
+  background-color: #dff0d8;
+  color: #379E3B;
+}
+
+.notice_holder.over {
+  position: fixed;
+  top: 100px;
+  z-index: 9;
+}
+
+.notice_holder {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
