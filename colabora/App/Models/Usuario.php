@@ -24,6 +24,7 @@ class Usuario extends Model {
 
 	//Salvar
 	public function salvar() {
+
 		try {
 		$query = "insert into usuario_cadastro_basico(nome, email, senha, dt_nasc, genero, estado)values(:nome, :email, :senha, :dt_nasc, :genero, :estado)";
 
@@ -37,9 +38,14 @@ class Usuario extends Model {
 		$stmt->execute();
 
 		return $this;
+
 		} catch (Exception $e) {
 			echo 'Exceção capturada: ',  $e->getMessage(), "\n";
 		}
+
+		//$this->view->cadastrar = isset($_GET['cadastrar']) ? $_GET['cadastrar'] : '';
+		
+
 
 	}
 
@@ -47,7 +53,7 @@ class Usuario extends Model {
 	public function validarCadastro() {
 		$valido = true;
 
-		//Aqui serão feitas as validações dos campos do cadstro de usuário
+		//Aqui serão feitas as validações dos campos do cadastro de usuário
 		if (strlen($this->__get('nome'))  < 3) {
 			$valido = false;
 		}

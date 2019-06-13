@@ -74,9 +74,24 @@ class IndexController extends Action{
 		if ($usuario->validarCadastro() && count($usuario->getUsuarioPoremail()) == 0) {
 
 			$usuario->salvar();
+
+			//$this->view->cadastro = isset($_GET['cadastro']) ? $_GET['cadastro'] : '';
+
+			//header('Location: /login?cadastro=ok');
+
+			//$cadastroOk = true;
+
+			//global $cadastroOk;
+
+			//$cadastroOk = true;
 			
-			$this->render('login');
-			echo "Cadastro realizado com sucesso, faça login para continuar!";
+			$this->render('interesses');
+
+			echo '<div align="center" class="alert alert-success" role="alert">
+			Cadastro realizado com sucesso, faça login para continuar!
+		  	</div>';
+			
+			  //return $cadastroOk;
 
 		}else{
 
@@ -93,6 +108,10 @@ class IndexController extends Action{
 			$this->view->erroCadastro = true;
 			
 			$this->render('cadastro');
+
+			echo '<div align="center" class="alert alert-danger" role="alert">
+			Erro ao cadastrar!
+		  	</div>';
 
 		}
 
@@ -144,6 +163,15 @@ class IndexController extends Action{
 		$this->render('politica_privacidade');
 
 	}
+
+	public function interesses() {
+
+		$this->validaAutenticacao();
+
+		$this->render('interesses');
+
+	}
+
 
 }	
 
