@@ -66,6 +66,12 @@
 
         }
 
+        public function experiencias()
+         {
+             $this->render('experiencias');
+            }
+        
+
         public function projeto(){
 
             //session_start();

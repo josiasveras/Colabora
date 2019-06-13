@@ -156,6 +156,14 @@ class Route extends Bootstrap {
 			'action' => 'index_projeto'
 		);
 
+		$routes['experiencias'] = array(
+			'route' => '/experiencias',
+			'controller' => 'appController',
+			'action' => 'experiencias'
+		);
+
+		
+
 
 		$this->setRoutes($routes);
 

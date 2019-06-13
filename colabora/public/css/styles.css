@@ -1200,7 +1200,7 @@ body {
   }
   /*configurações pagina interesses e habilidades*/
   .application_container {
-    padding-top: 0px;
+    padding-top: 45px;
   }
   .small-row {
     margin-left: -2.5px;
@@ -1296,7 +1296,7 @@ body {
     border-radius: 0 0 5px 5px
   }
   .box_actions_outros {
-    margin: 18px -25px 0px 180px;
+    margin: 10px -25px 0px 235px;
     padding: 20px;
     border-radius: 0 0 5px 5px
   }

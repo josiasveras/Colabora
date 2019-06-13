@@ -13,8 +13,8 @@
         <a href="/index" class="logo" data-scroll><b>C</b>olabora</a>
         <nav class="nav-collapse">
             <ul>
-                <li class="menu-item"><a href="#home">Sobre nós</a></li>
-                <li class="menu-item"><a href="#equipe">Equipe</a></li>
+                <li class="menu-item"><a href="/index#home">Sobre nós</a></li>
+                <li class="menu-item"><a href="/index#equipe">Equipe</a></li>
                 <li class="menu-item"><a href="/index_projeto">Projetos</a></li>
                 <li class="menu-item"><a href="/login">Entrar</a></li>
                 <li class="menu-item"><a href="/cadastro">Registre-se</a></li>
@@ -22,64 +22,7 @@
             </ul>
         </nav>
     </header>
-
-    <!-- banner -->
-    <div class="banner_w3lspvt">
-        <div class="csslider infinity" id="slider1">
-            <input type="radio" name="slides" id="slides_1" />
-            <input type="radio" name="slides" id="slides_2" />
-            <input type="radio" name="slides" id="slides_3" />
-            <ul class="banner_slide_bg">
-                <li>
-                    <div class="container-fluid">
-                        <div class="w3ls_banner_txt">
-                            <h3><span>Importância</span>Social</h3>
-                            <p class="w3ls_pvt-title">
-                                O trabalho voluntário, além de ter importância social, propociona bem-estar e alegria
-                                a quem realiza,ao mesmo tempo em que eleva a autoestima,melgora a ansiedade e pode até mesmo
-                                prevenir doenças como depresão
-                            </p>
-                            <p class="w3ls_pvt-title mt-2">Seja um voluntário.</p>
-                            <a href="/cadastro" class="btn button-style mt-sm-5 mt-4">Inscreva-se</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="container-fluid">
-                        <div class="w3ls_banner_txt">
-                            <h3><span>A melhor</span>opção</h3>
-                            <p class="w3ls_pvt-title">
-                                É um bom momento para treinar o que você aprende: escolher uma atividade ligada a sua
-                                área é a melhro opção.
-                            </p>
-                            <p class="w3ls_pvt-title mt-2">Mudança Social</p>
-                            <a href="/cadastro" class="btn button-style mt-sm-5 mt-4">Inscreva-se</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="container-fluid">
-                        <div class="w3ls_banner_txt">
-                            <h3><span>Mude o Mundo</span>de Alguém</h3>
-                            <p class="w3ls_pvt-title">
-                                Ser voluntário é crescer a partir das experiência do outro.
-                            </p>
-                            <p class="w3ls_pvt-title mt-2">Experiências.</p>
-                            <a href="/cadastro" class="btn button-style mt-sm-5 mt-4">Inscreva-se</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="navigation">
-                <div>
-                    <label for="slides_1"></label>
-                    <label for="slides_2"></label>
-                    <label for="slides_3"></label>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- //banner -->
+    <div class="clearfix"> </div>
 
     <?php foreach ($this->view->projetos as $id_projeto => $projeto) { ?>
         <div class="application_container container-fluid">
