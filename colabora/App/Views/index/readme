@@ -29,13 +29,14 @@ Tarefas Jorzias e Anna
 pagina de login)
 
 Adriana 
--tema home (usuario logado)
+-tela home (usuario logado)
 -politica privacidade
 -termos de uso
 -validação front
 -terminar tela perfil
--ajustar menu usuário logado
--terminar index
--botão publicar projeto
--verificar bug css menu
+-ajustar menu usuário logado - ok
+-terminar index - em progresso
+-botão publicar projeto - ok
+-verificar bug css menu - ok
 -colocar menu usuário logado opçõa de ir para página de todos os projetos
+- botão excluir projeto - ok
