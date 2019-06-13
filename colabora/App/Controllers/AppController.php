@@ -246,7 +246,7 @@
                 print_r($_POST);
                 echo '<pre>';
         
-                $interesses->insertInteresse();
+                //$interesses->insertInteresse();
                 //$this->render('habilidades');
             }
 
@@ -306,6 +306,23 @@
                 //$this->render('habilidades');
             }
 
+            switch ($_POST) {
+                case  '1':
+                    echo 'Foi 1';
+                    break;
+                
+                default:
+                    echo 'Deu ruim';
+                    break;
+                case  '2':
+                    echo 'Foi 2';
+                    break;
+                
+                default:
+                    # code...
+                    break;
+            }
+
             if ($_POST['habilidade_cidadania'] == '' && $_POST['habilidade_educacao'] == '' && $_POST['habilidade_esporte'] == '' &&
             $_POST['habilidade_saude'] == '' && $_POST['habilidade_cultura'] == '' && $_POST['habilidade_acaosocial'] == '' &&
             $_POST['habilidade_idiomas'] == '' && $_POST['habilidade_outros'] == ''){
@@ -325,6 +342,8 @@
         }
 
         public function interesses() {
+
+            $this->validaAutenticacao();
 
             $this->render('interesses');
     
