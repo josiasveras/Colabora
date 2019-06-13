@@ -15,6 +15,11 @@
         <a href="index.html" class="logo" data-scroll><b>C</b>olabora</a>
 
         <div class="w3layouts-right">
+            <nav class="menu_logado">
+                <ul class="menu">
+                    <li class="item"><a href="/index_projeto">Projetos</a></li>
+                </ul>
+            </nav>
             <div class="profile_details_left">
                 <!--notifications of menu start -->
                 <ul class="nofitications-dropdown">
@@ -52,8 +57,7 @@
                             <span class="prfil-img"><img src="icons/profile3.jpg" alt="imagem perfil"> </span>
                             <div class="user-name">
                                 <?php session_start();?>
-                                <p><?php echo $_SESSION['nome']; ?></p>
-                                <span>Administrator</span>
+                                <p><?php echo $_SESSION['nome']; ?></p>                             
                             </div>
                             <i class="fa fa-angle-down"></i>
                             <i class="fa fa-angle-up"></i>
@@ -83,7 +87,7 @@
                             <a class="block mg_bot_20" href="/editar_senha">Alterar Senha</a>
                         </li>
                         <li>
-                            <a class="block mg_bot_20" href="#">Excluir conta</a>
+                            <a class="block mg_bot_20" href="/excluir_conta">Excluir conta</a>
                         </li>
                         <li>
                             <a class="block" href="/politica_privacidade">Termos de Privacidade</a>
