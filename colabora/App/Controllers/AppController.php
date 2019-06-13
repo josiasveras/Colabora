@@ -9,6 +9,8 @@
     class AppController extends Action{
 
         public function home_projetos() {
+       
+           // $this->view->auth = isset($_GET['auth']) ? $_GET['auth'] : '';
 
                 //session_start();
 
@@ -24,12 +26,14 @@
 
                 $projetos = $projeto->getAllProjetos();
 
-                /*echo '<pre>';
+        /*echo '<pre>';
                 print_r($projetos);
                 echo '</pre>';*/
 
-                $this->view->projetos = $projetos;
+               
 
+                $this->view->projetos = $projetos;
+                
                 $this->render('home_projetos');
 
            /* }else {
