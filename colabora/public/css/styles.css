@@ -1685,93 +1685,100 @@ body {
       text-align: left;
     }
     @media (min-width: 1200px) {
-    .btn_secondary {
-      background-color: white;
-      border-color: #ccd0d9;
-      color: #718696;
-    }
-    /*-- footer --*/
-    .footer {
-      background-color: #1A478B;
-      padding: 0.1px;
-    }
-    .footer__bottom {
-      padding: 10px 0 40px;
-    }
-    .footer .footer__bottom p a, .footer .footer__bottom p strong {
-      font-weight: bold;
-      color: white;
-    }
-    .footer .footer__bottom p {
-      color: white;
-      margin: 0 5px 0;
-      text-align: center;
-    }
-    .footer .footer__bottom p {
-      text-align: right;
-    }
-    .copy-right-grids {
-      padding: 20px 0px;
-    }
-    .copy-left {
-      float: left;
-    }
-    .copy-right {
-      float: right;
-    }
-    .copy-right ul li {
-      list-style-type: none;
-      display: inline-block;
-      margin: 0 0px;
-      border-left: 1px solid white;
-      padding: 0 12px;
-    }
-    .copy-right ul li a {
-      color: white;
-      font-size: 13px;
-    }
-    .copy-right ul li a:hover {
-      color: #ff0779;
-    }
-  }
-  #toTop {
-    display: none;
-    text-decoration: none;
-    position: fixed;
-    bottom: 29px;
-    right: 3%;
-    overflow: hidden;
-    width: 38px;
-    height: 25px;
-    border: none;
-    text-indent: 100%;
-    background: url(../icons/move-up.png) no-repeat 0px 0px;
-  }
-  #toTopHover {
-    width: 38px;
-    height: 25px;
-    display: block;
-    overflow: hidden;
-    float: right;
-    opacity: 0;
-    -moz-opacity: 0;
-    filter: alpha(opacity=0);
-  }
-  .notice {
-    padding: 15px 20px;
-    border-radius: 3px;
-    display: inline-block;
-    border: 1px solid #379E3B;
-    background-color: #dff0d8;
-    color: #379E3B;
-  }
-  .notice_holder.over {
-    position: fixed;
-    top: 100px;
-    z-index: 9;
-  }
-  .notice_holder {
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-  }
+      .btn_secondary {
+        background-color: white;
+        border-color: #ccd0d9;
+        color: #718696;
+      }
+      /*-- footer --*/
+      .footer {
+        background-color: #1A478B;
+        padding: 0.1px;
+      }
+      .footer__bottom {
+        padding: 10px 0 40px;
+      }
+      .footer .footer__bottom p a, .footer .footer__bottom p strong {
+        font-weight: bold;
+        color: white;
+      }
+      .footer .footer__bottom p {
+        color: white;
+        margin: 0 5px 0;
+        text-align: center;
+      }
+      .footer .footer__bottom p {
+        text-align: right;
+      }
+      .copy-right-grids {
+        padding: 20px 0px;
+      }
+      .copy-left {
+        float: left;
+      }
+      .copy-right {
+        float: right;
+      }
+      .copy-right ul li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 0px;
+        border-left: 1px solid white;
+        padding: 0 12px;
+      }
+      .copy-right ul li a {
+        color: white;
+        font-size: 13px;
+      }
+      .copy-right ul li a:hover {
+        color: #ff0779;
+      }
+      #toTop {
+        display: none;
+        text-decoration: none;
+        position: fixed;
+        bottom: 29px;
+        right: 3%;
+        overflow: hidden;
+        width: 38px;
+        height: 25px;
+        border: none;
+        text-indent: 100%;
+        background: url(../icons/move-up.png) no-repeat 0px 0px;
+      }
+      #toTopHover {
+        width: 38px;
+        height: 25px;
+        display: block;
+        overflow: hidden;
+        float: right;
+        opacity: 0;
+        -moz-opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      .notice {
+        padding: 15px 20px;
+        border-radius: 3px;
+        display: inline-block;
+        border: 1px solid #379E3B;
+        background-color: #dff0d8;
+        color: #379E3B;
+      }
+      .notice_holder.over {
+        position: fixed;
+        top: 100px;
+        z-index: 9;
+      }
+      .notice_holder {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+      }
+      p .big {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      .label_lg {
+        display: block;
+        font-size: 16px;
+      }

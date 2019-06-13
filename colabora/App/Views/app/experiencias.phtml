@@ -59,7 +59,7 @@
                             <span class="prfil-img"><img src="icons/profile3.jpg" alt="imagem perfil"> </span>
                             <div class="user-name">
                                 <?php session_start(); ?>
-                                <p><?php echo $_SESSION['nome']; ?></p>                               
+                                <p><?php echo $_SESSION['nome']; ?></p>
                             </div>
                             <i class="fa fa-angle-down"></i>
                             <i class="fa fa-angle-up"></i>
@@ -75,8 +75,37 @@
                 </li>
             </ul>
         </div>
-
         <div class="clearfix"> </div>
     </div>
+
+
+    <div class="application_container container-fluid">
+        <div class='row'>
+            <div class="col-md-8 col-lg-8 col-sm-10 col-md-offset-2 col-lg-offset-2 col-sm-offset-1">
+                <form class="box" id="user_profile" action="#" method="post">
+                    <h1 class="mg_bot_40 text_center">Experiências</h1>
+                    <p class='big mg_bot_20'>Hora de se abrir e nos contar um pouco mais das suas experiências de vida.</p>
+
+                    <div class='form-group'>
+                        <label class="label_lg" for="user_education">Educação</label>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" name="education" id="user_education" placeholder="Escreva aqui sobre seus estudos, cursos"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="label_lg" for="user_work_experience">Experiências profissionais</label>
+                           <textarea class="form-control" rows="5" name="user_work_experience" id="work_experience" placeholder="Nos conte um pouco sobre suas experiências profissionais"></textarea>
+                        </div>
+                        
+                        <div class='box_actions'>
+                            <input type="submit" name="commit" value="Salvar" class="btn btn_lg btn_primary">
+                            <a class="btn btn_lg btn_secondary" href="/perfil">Cancelar</a>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 
 </body>
