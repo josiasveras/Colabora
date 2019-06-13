@@ -30,18 +30,34 @@ CREATE TABLE `usuario_foto`
 CREATE TABLE `usuario_interesse`
 (
   `id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  `usuario_cadastro_basico_id` int,
   `interesse` varchar(30) NOT NULL
 );
 
-INSERT INTO `usuario_interesse`(`usuario_cadastro_basico_id`, `interesse`) VALUES (1,'cidadania');
-INSERT INTO `usuario_interesse`(`usuario_cadastro_basico_id`, `interesse`) VALUES (2,'educação');
-INSERT INTO `usuario_interesse`(`usuario_cadastro_basico_id`, `interesse`) VALUES (3,'esporte');
-INSERT INTO `usuario_interesse`(`usuario_cadastro_basico_id`, `interesse`) VALUES (4,'saúde');
-INSERT INTO `usuario_interesse`(`usuario_cadastro_basico_id`, `interesse`) VALUES (5,'cultura');
-INSERT INTO `usuario_interesse`(`usuario_cadastro_basico_id`, `interesse`) VALUES (6,'ação social');
-INSERT INTO `usuario_interesse`(`usuario_cadastro_basico_id`, `interesse`) VALUES (6,'idiomas');
-INSERT INTO `usuario_interesse`(`usuario_cadastro_basico_id`, `interesse`) VALUES (6,'outros');
+INSERT INTO `usuario_interesse`(`interesse`) VALUES ('cidadania');
+INSERT INTO `usuario_interesse`(`interesse`) VALUES ('educação');
+INSERT INTO `usuario_interesse`(`interesse`) VALUES ('esporte');
+INSERT INTO `usuario_interesse`(`interesse`) VALUES ('saúde');
+INSERT INTO `usuario_interesse`(`interesse`) VALUES ('cultura');
+INSERT INTO `usuario_interesse`(`interesse`) VALUES ('ação social');
+INSERT INTO `usuario_interesse`(`interesse`) VALUES ('idiomas');
+INSERT INTO `usuario_interesse`(`interesse`) VALUES ('outros');
+
+CREATE TABLE `interesseXusuario_cadastro_basico`
+(
+  `id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  `usuario_cadastro_basico_id` int,
+  `interesse_id` int
+);
+
+INSERT INTO `interesseXusuario_cadastro_basico`(`usuario_cadastro_basico_id`, `interesse_id`) VALUES (1,1);
+INSERT INTO `interesseXusuario_cadastro_basico`(`usuario_cadastro_basico_id`, `interesse_id`) VALUES (2,2);
+INSERT INTO `interesseXusuario_cadastro_basico`(`usuario_cadastro_basico_id`, `interesse_id`) VALUES (3,3);
+INSERT INTO `interesseXusuario_cadastro_basico`(`usuario_cadastro_basico_id`, `interesse_id`) VALUES (4,4);
+INSERT INTO `interesseXusuario_cadastro_basico`(`usuario_cadastro_basico_id`, `interesse_id`) VALUES (5,5);
+INSERT INTO `interesseXusuario_cadastro_basico`(`usuario_cadastro_basico_id`, `interesse_id`) VALUES (2,6);
+INSERT INTO `interesseXusuario_cadastro_basico`(`usuario_cadastro_basico_id`, `interesse_id`) VALUES (6,7);
+INSERT INTO `interesseXusuario_cadastro_basico`(`usuario_cadastro_basico_id`, `interesse_id`) VALUES (6,8);
+
 
 CREATE TABLE `usuario_quem_sou`
 (
@@ -86,7 +102,7 @@ INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('educação');
 INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('desenvolvimento web');
 INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('reformas');
 INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('decoração');
-INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('trabalho comunitário')
+INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('trabalho comunitário');
 INSERT INTO `usuario_habilidade`(`habilidade`) VALUES ('outros');
 
 CREATE TABLE `habilidadeXusuario_cadastro_basico`
@@ -141,8 +157,6 @@ INSERT INTO `projeto`(`usuario_cadastro_basico_id`, `categoria_id`,`nome_projeto
 
 ALTER TABLE `usuario_foto` ADD FOREIGN KEY (`usuario_cadastro_basico_id`) REFERENCES `usuario_cadastro_basico` (`id`);
 
-ALTER TABLE `usuario_interesse` ADD FOREIGN KEY (`usuario_cadastro_basico_id`) REFERENCES `usuario_cadastro_basico` (`id`);
-
 ALTER TABLE `usuario_quem_sou` ADD FOREIGN KEY (`usuario_cadastro_basico_id`) REFERENCES `usuario_cadastro_basico` (`id`);
 
 ALTER TABLE `usuario_experiencia_de_vida` ADD FOREIGN KEY (`usuario_cadastro_basico_id`) REFERENCES `usuario_cadastro_basico` (`id`);
@@ -152,3 +166,6 @@ ALTER TABLE `habilidadeXusuario_cadastro_basico` ADD FOREIGN KEY (`usuario_cadas
 
 ALTER TABLE `projeto` ADD FOREIGN KEY (`usuario_cadastro_basico_id`) REFERENCES `usuario_cadastro_basico` (`id`);
 ALTER TABLE `projeto` ADD FOREIGN KEY (`categoria_id`) REFERENCES `projeto_categoria` (`id`);
+
+ALTER TABLE `interesseXusuario_cadastro_basico` ADD FOREIGN KEY (`interesse_id`) REFERENCES `usuario_interesse` (`id`);
+ALTER TABLE `interesseXusuario_cadastro_basico` ADD FOREIGN KEY (`usuario_cadastro_basico_id`) REFERENCES `usuario_cadastro_basico` (`id`);

@@ -126,7 +126,6 @@
             $this->validaAutenticacao();
 
             $this->render('habilidades');
-            echo 'Cheguei aqui';
                 
             $habilidades = Container::getModel('Habilidades');
 
@@ -216,7 +215,7 @@
             $_POST['user_skills_ensinar'] == '' && $_POST['user_skills_devweb'] == '' && $_POST['user_skills_reformas'] == '' &&
             $_POST['user_skills_decoracao'] == ''){
 
-                echo '<div class="alert alert-danger" role="alert">
+                echo '<div align="center" class="alert alert-danger" role="alert">
                 Selecione ao menos uma categoria
                 </div>';
 
