@@ -74,7 +74,7 @@ body {
 
 .conteudo {
   text-align: center;
-  padding: 100px 0 0;
+  padding: 50px 0 0;
   /*height: 550px;*/
   width: 100%;
   background-color: #F8F8FF;
@@ -84,7 +84,7 @@ body {
 
 .Service-section {
   padding: 1em 0;
-  background: #FfF;
+  background: #F8F8FF;
   text-align: center;
 }
 
@@ -100,12 +100,40 @@ body {
 /*equipe nova*/
 
 .Stories-section {
-  background: #A52A2A;
+  background: #8B4513;
   padding: 4em 0 0 0;
 }
 
 .gallery-head {
   margin: 1em 0;
+}
+
+.gallery-box img {
+  border: 2px solid #5d5248;
+}
+
+.para_s {
+  padding: 0 1em 1em 0;
+}
+
+.para_s h4 {
+  color: #fff;
+  font-size: 1.6em;
+  margin: 0.7em auto 0;
+  font-family: 'Arimo Sans', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.para_s p {
+  color: #D2B48C;
+  font-size: 1.0em;
+  text-align: center;
+  line-height: 1.5em;
+  margin-top: 0px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 300;
 }
 
 .gallery-head h3 {
@@ -121,9 +149,6 @@ body {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
-  }
-  .gallery-box img {
-    border: 2px solid#5d5248;
   }
   /*----*/
   h1 {
@@ -157,8 +182,8 @@ body {
   }
   .item a {
     color: white;
-   text-decoration: none;
-   margin: 6px;
+    text-decoration: none;
+    margin: 6px;
   }
   /* ------------------------------------------
   NAVIGATION STYLES
@@ -1668,4 +1693,29 @@ body {
   .copy-right ul li a:hover {
     color: #ff0779;
   }
+}
+
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 29px;
+  right: 3%;
+  overflow: hidden;
+  width: 38px;
+  height: 25px;
+  border: none;
+  text-indent: 100%;
+  background: url(../icons/move-up.png) no-repeat 0px 0px;
+}
+
+#toTopHover {
+  width: 38px;
+  height: 25px;
+  display: block;
+  overflow: hidden;
+  float: right;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
 }
